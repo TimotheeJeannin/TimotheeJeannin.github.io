@@ -6,6 +6,7 @@ body {
     background: radial-gradient(#cfcdd3, #e7e4eb, #ffffff); /* Standard syntax */
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: large;
+    line-height: 150%;
 }
 
 .tj-section-title {
@@ -26,10 +27,6 @@ body {
 
 .label-primary {
     margin-right: 5px;
-}
-
-body {
-    line-height: 150%;
 }
 
 div.progress {
