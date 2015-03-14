@@ -2,6 +2,7 @@ angular.module('App', [])
     .controller('Controller', function ($scope) {
         $scope.skills = {
             'Front-End': {
+                'FontAwesome': '100%',
                 'Less': '70%',
                 'AngularJs': '90%',
                 'React': '10%',
@@ -48,6 +49,9 @@ angular.module('App', [])
                 'Bash': '40%',
                 'JavaScript': '90%',
                 'Python': '90%',
+                'C': '30%',
+                'C++': '40%',
+                'C#': '20%',
                 'Java': '90%',
                 'SQL': '80%'
             },
@@ -59,6 +63,21 @@ angular.module('App', [])
             'IDE': {
                 'Intellij IDEA': '90%',
                 'Eclipse': '60%'
+            },
+            'Deployment': {
+                'Fabric': '70%',
+                'Gunicorn': '70%',
+                'Docker': '30%',
+                'Tomcat': '20%',
+                'Puppet': '30%'
+            },
+            'Cloud': {
+                'Amazon S3': '80%',
+                'Amazon EC2': '60%',
+                'Amazon Route 53': '40%',
+                'YouTube API': '60%',
+                'Google Admin SDK': '60%',
+                'Google Cloud Messaging': '40%'
             }
         };
     });
