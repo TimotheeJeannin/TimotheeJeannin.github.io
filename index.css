@@ -35,10 +35,12 @@ body {
 }
 
 div.progress {
+    background-color: #ffffff;
     border-radius: 0;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    height: 10px;
+    margin-top: 13px;
+    box-shadow: 0 0 4px #a8a8a8;
+    margin-bottom: 3px;
+    height: 4px;
 }
 
 div.progress div.progress-bar {
