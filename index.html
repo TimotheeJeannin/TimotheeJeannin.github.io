@@ -4,38 +4,14 @@
     <title>Timothée Jeannin</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="index.css">
     <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-    <style>
-
-        .tj-section-title {
-            font-weight: bold;
-        }
-
-        .tj-title {
-            font-weight: bold;
-        }
-
-        .tj-info {
-            font-style: italic;
-        }
-
-        .tj-spaced {
-            padding-top: 20px;
-        }
-
-        .label-primary {
-            margin-right: 5px;
-        }
-
-        body {
-            line-height: 150%;
-        }
-
-    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+    <script src="index.js"></script>
 </head>
-<body>
-<div class="container">
+<body ng-app="App">
+<div class="container" ng-controller="Controller">
     <h1><b>Timothée Jeannin</b></h1>
 
     <div class="row">
@@ -123,7 +99,7 @@
             </div>
         </div>
         <div class="row tj-spaced">
-            <div class="col-md-2 text-right">2006</div>
+            <div class="col-md-2 text-right">2002 - 2006</div>
             <div class="col-md-10">
                 <span class="tj-title">Baccalauréat with honors at Lycée Alain</span>
                 <span class="tj-info">(4 years - Le Vésinet, France)</span><br/>
@@ -217,6 +193,30 @@
                     <a class="label label-primary" href="http://developer.android.com/sdk/index.html">Android SDK</a>
                     <a class="label label-primary" href="http://git-scm.com/">Git</a>
                     <a class="label label-primary" href="http://junit.org/">JUnit</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="tj-section-title">Programming Skills</h1>
+
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 20%;"></div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">Html</div>
+                        <div class="col-sm-6">
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 90%;"></div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">Css</div>
+                    </div>
                 </div>
             </div>
         </div>

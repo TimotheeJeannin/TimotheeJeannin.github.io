@@ -1,0 +1,38 @@
+
+body {
+    background-color: #dfdfdf;
+}
+
+.tj-section-title {
+    font-weight: bold;
+}
+
+.tj-title {
+    font-weight: bold;
+}
+
+.tj-info {
+    font-style: italic;
+}
+
+.tj-spaced {
+    padding-top: 20px;
+}
+
+.label-primary {
+    margin-right: 5px;
+}
+
+body {
+    line-height: 150%;
+}
+
+div.progress {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    height: 10px;
+}
+
+div.progress div.progress-bar {
+    float: right;
+}
