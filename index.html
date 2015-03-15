@@ -117,88 +117,12 @@
         <div class="col-md-12">
             <h1 class="tj-section-title">Personal Projects</h1>
 
-            <div class="row tj-spaced">
-                <div class="col-md-2 text-right hidden-xs hidden-sm tj-visible-print-block">2012 - Now</div>
+            <div class="row tj-spaced" ng-repeat="project in personalProjects">
+                <div class="col-md-2 text-right hidden-xs hidden-sm tj-visible-print-block">{{project.timeFrame}}</div>
                 <div class="col-md-10">
-                    <span class="tj-title">Automated Youtube Channel: <a
-                            href="https://www.youtube.com/channel/UCsuAMQ97Gq0oy1pub04o4wA">DotaDroid</a>.</span><br/>
-                    DotaDroid finds interesting Dota2 actions and upload them on YouTube.<br/>
-                    <a class="label label-primary" href="https://www.python.org/">Python</a>
-                    <a class="label label-primary" href="http://redis.io/">Redis</a>
-                    <a class="label label-primary" href="http://python-rq.org/">Rq</a>
-                    <a class="label label-primary" href="http://flask.pocoo.org/">Flask</a>
-                    <a class="label label-primary" href="https://nodejs.org/">Node.js</a>
-                    <a class="label label-primary" href="https://angularjs.org/">AngularJS</a>
-                    <a class="label label-primary" href="https://www.java.com/fr/">Java</a>
-                    <a class="label label-primary" href="https://gradle.org/">Gradle</a>
-                    <a class="label label-primary" href="https://github.com/google/protobuf">Google Protobuf</a>
-                </div>
-            </div>
-            <div class="row tj-spaced">
-                <div class="col-md-2 text-right hidden-xs hidden-sm tj-visible-print-block">2014 - Now</div>
-                <div class="col-md-10">
-                    <span class="tj-title">Desktop Application: <a
-                            href="http://www.streamtim.com/">StreamTim</a>.</span><br/>
-                    Allows to stream a movie in Vlc from a torrent link / magnet link.<br/>
-                    <a class="label label-primary" href="https://github.com/nwjs/nw.js">NW.js</a>
-                    <a class="label label-primary" href="http://gruntjs.com/">Grunt</a>
-                    <a class="label label-primary" href="http://karma-runner.github.io/0.12/index.html">Karma</a>
-                    <a class="label label-primary" href="http://jasmine.github.io/">Jasmine</a>
-                    <a class="label label-primary" href="http://getbootstrap.com/">Bootstrap</a>
-                    <a class="label label-primary" href="http://jquery.com/">jQuery</a>
-                    <a class="label label-primary" href="http://d3js.org/">D3.js</a>
-                    <a class="label label-primary" href="https://github.com/mafintosh/peerflix">Peerflix</a>
-                </div>
-            </div>
-            <div class="row tj-spaced">
-                <div class="col-md-2 text-right hidden-xs hidden-sm tj-visible-print-block">2012 - Now</div>
-                <div class="col-md-10">
-                    <span class="tj-title">Android App: <a href="http://circlealarm.com">CircleAlarm</a>.</span><br/>
-                    Design, development, promotion and marketing of an alarm clock for android.<br/>
-                    More than 80 000 downloads and an average rating of 4.6 out of 5.
-                    <ul>
-                        <li>Top 10 of the best free apps of all times on
-                            <a href="http://www.alltechtricks.org/top-10-best-android-apps-for-free/">
-                                alltechtricks.com
-                            </a>
-                        </li>
-                        <li>First of the apps of the week on
-                            <a href="http://androidandme.com/2012/10/applications/top-10-most-popular-android-apps-from-last-week-circle-alarm-nba-2k13-right-click/">
-                                androidandme.com
-                            </a>
-                        </li>
-                        <li>Selected as android application of the week by
-                            <a href="http://www.presse-citron.net/les-applis-a-telecharger-cette-semaine-polagram-circle-alarm-doo-net-appswitch/">
-                                presse-citron.net
-                            </a>
-                        </li>
-                    </ul>
-                    <a class="label label-primary" href="https://www.java.com/fr/">Java</a>
-                    <a class="label label-primary" href="http://developer.android.com/sdk/index.html">Android SDK</a>
-                    <a class="label label-primary" href="http://www.joda.org/joda-time/">Joda Time</a>
-                    <a class="label label-primary" href="http://square.github.io/otto/">Otto</a>
-                    <a class="label label-primary" href="http://git-scm.com/">Git</a>
-                    <a class="label label-primary" href="http://junit.org/">JUnit</a>
-                    <a class="label label-primary" href="https://github.com/RobotiumTech/robotium">Robotium</a>
-                    <a class="label label-primary" href="https://www.google.fr/ads/admob/">Google AdMob‎</a>
-                    <a class="label label-primary" href="http://www.google.fr/intl/fr/analytics/">Google Analytics</a>
-                </div>
-            </div>
-            <div class="row tj-spaced">
-                <div class="col-md-2 text-right hidden-xs hidden-sm tj-visible-print-block">2012 - Now</div>
-                <div class="col-md-10">
-                    <span class="tj-title">Android Open Source Library: <a
-                            href="http://github.com/TimotheeJeannin/ProviGen">ProviGen</a>.</span><br/>
-                    Development, promotion and maintenance of a database management tool for Android.
-                    <ul>
-                        <li>Selected and published as library of the week by
-                            <a href="http://androidweekly.net/issues/issue-57">androidweekly.net</a>
-                        </li>
-                    </ul>
-                    <a class="label label-primary" href="https://www.java.com/fr/">Java</a>
-                    <a class="label label-primary" href="http://developer.android.com/sdk/index.html">Android SDK</a>
-                    <a class="label label-primary" href="http://git-scm.com/">Git</a>
-                    <a class="label label-primary" href="http://junit.org/">JUnit</a>
+                    <span class="tj-title" ng-bind-html="project.title"></span><br/>
+                    <span ng-bind-html="project.description"></span>
+                    <a class="label label-primary" ng-repeat="techno in project.stack" ng-href="{{techno.link}}">{{techno.name}}</a>
                 </div>
             </div>
         </div>
