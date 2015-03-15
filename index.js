@@ -95,7 +95,7 @@ angular.module('App', ['ngAnimate'])
             {
                 'timeFrame': '2014 - Now',
                 'title': $sce.trustAsHtml('Desktop Application: <a href="http://www.streamtim.com/">StreamTim</a>.'),
-                'description': $sce.trustAsHtml('Allows to stream a movie in <a href="http://www.videolan.org/vlc/">Vlc</a> ' +
+                'description': $sce.trustAsHtml('Allows you to stream a movie in <a href="http://www.videolan.org/vlc/">Vlc</a> ' +
                 'from a torrent link / magnet link.<br/>'),
                 'stack': [{'name': 'NW.js', 'link': 'https://github.com/nwjs/nw.js'},
                     {'name': 'Grunt', 'link': 'http://gruntjs.com/'},
