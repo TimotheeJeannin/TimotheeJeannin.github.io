@@ -5,8 +5,7 @@ body {
     background: -moz-radial-gradient(#cfcdd3, #e7e4eb, #ffffff); /* For Firefox 3.6 to 15 */
     background: radial-gradient(#cfcdd3, #e7e4eb, #ffffff); /* Standard syntax */
     font-family: 'Open Sans', sans-serif;
-    font-size: large;
-    line-height: 150%;
+    line-height: 140%;
 }
 
 .tj-section-title {
