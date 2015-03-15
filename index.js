@@ -1,5 +1,39 @@
 angular.module('App', ['ngAnimate'])
     .controller('Controller', function ($scope, $sce) {
+
+        $scope.experiences = [
+            {
+                'timeFrame': '2013 - Now',
+                'title': $sce.trustAsHtml('Software engineer / Project manager: <a href="http://www.letsignit.com/">Letsignit</a>.'),
+                'info': '(1 year and 6 months - Marseille, France)',
+                'description': $sce.trustAsHtml('Project management, Web applications, Browser extensions, Web services.<br/>Responsible for defining development methodologies across the enterprise.')
+            },
+            {
+                'timeFrame': '2012 - 2013',
+                'title': $sce.trustAsHtml('Software engineer: <a href="http://www.synchronoss.com/">Synchronoss</a>.'),
+                'info': '(1 year - Marseille, France)',
+                'description': $sce.trustAsHtml('Android App development for Orange and Verizon carriers.<br/>Teamwork, user interfaces design, cloud synchronization.')
+            },
+            {
+                'timeFrame': '2012',
+                'title': $sce.trustAsHtml('Software engineer: <a href="http://www.soprasteria.com/">Sopra Steria</a>.'),
+                'info': '(3 months - Aix en Provence, France)',
+                'description': $sce.trustAsHtml('Initialization and development of Airbus Helicopters customer portal.<br/>Teamwork, industrialization of the development process, web architecture.')
+            },
+            {
+                'timeFrame': '2011',
+                'title': $sce.trustAsHtml('Graduation internship : <a href="http://www.airbushelicopters.com/">Airbus Helicopters</a>.'),
+                'info': '(6 months - Marignane, France)',
+                'description': $sce.trustAsHtml('Development of an electrical load analysis tool for helicopters.<br/>Project management, critical data handling, web development.')
+            },
+            {
+                'timeFrame': '2010',
+                'title': $sce.trustAsHtml('Internship: <a href="http://www.campusgroups.com/">CampusGroups</a>.'),
+                'info': '(2 months - New York, United States)',
+                'description': $sce.trustAsHtml('Monitoring tool for academic associations management platform.<br/>Teamwork in a growing start-up, web development.')
+            }
+        ];
+
         $scope.personalProjects = [
             {
                 'timeFrame': '2012 - Now',
