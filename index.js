@@ -10,10 +10,10 @@ angular.module('App', ['ngAnimate'])
                 'stack': [
                     {'name': 'Python', 'link': 'https://www.python.org/'},
                     {'name': 'Flask', 'link': 'http://flask.pocoo.org/'},
-                    {'name': 'JavaScript', 'link': 'https://developer.mozilla.org/fr/docs/Web/JavaScript'},
+                    {'name': 'REST', 'link': 'http://en.wikipedia.org/wiki/Representational_state_transfer'},
+                    {'name': 'AngularJS', 'link': 'https://angularjs.org/'},
                     {'name': 'jQuery', 'link': 'http://jquery.com/'},
                     {'name': 'D3.js', 'link': 'http://d3js.org/'},
-                    {'name': 'AngularJS', 'link': 'https://angularjs.org/'},
                     {'name': 'Java', 'link': 'https://www.java.com/fr/'},
                     {'name': 'Maven', 'link': 'http://maven.apache.org/'},
                     {'name': 'MySQL', 'link': 'http://www.mysql.com/'},
