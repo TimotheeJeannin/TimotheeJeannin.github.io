@@ -8,6 +8,13 @@ body {
     line-height: 140%;
 }
 
+@media print {
+    body {
+        background: none;
+        font-family: Arial, sans-serif;
+    }
+}
+
 .tj-section-title {
     margin-top: 50px;
     font-weight: bold;
@@ -29,7 +36,7 @@ body {
     margin-right: 5px;
 }
 
-.label{
+.label {
     border-radius: 0;
 }
 
@@ -44,4 +51,17 @@ div.progress {
 
 div.progress div.progress-bar {
     float: right;
+}
+
+@media print {
+    div.progress {
+        background-color: lightgray;
+        border: 0;
+        box-shadow: none;
+    }
+
+    div.progress div.progress-bar {
+        border: 0;
+        box-shadow: none;
+    }
 }
