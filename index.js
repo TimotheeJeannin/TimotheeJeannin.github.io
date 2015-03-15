@@ -6,31 +6,74 @@ angular.module('App', ['ngAnimate'])
                 'timeFrame': '2013 - Now',
                 'title': $sce.trustAsHtml('Software engineer / Project manager: <a href="http://www.letsignit.com/">Letsignit</a>.'),
                 'info': '(1 year and 6 months - Marseille, France)',
-                'description': $sce.trustAsHtml('Project management, Web applications, Browser extensions, Web services.<br/>Responsible for defining development methodologies across the enterprise.')
+                'description': $sce.trustAsHtml('Project management, Web applications, Browser extensions, Web services.<br/>Responsible for defining development methodologies across the enterprise.'),
+                'stack': [
+                    {'name': 'Python', 'link': 'https://www.python.org/'},
+                    {'name': 'Flask', 'link': 'http://flask.pocoo.org/'},
+                    {'name': 'JavaScript', 'link': 'https://developer.mozilla.org/fr/docs/Web/JavaScript'},
+                    {'name': 'jQuery', 'link': 'http://jquery.com/'},
+                    {'name': 'D3.js', 'link': 'http://d3js.org/'},
+                    {'name': 'AngularJS', 'link': 'https://angularjs.org/'},
+                    {'name': 'Java', 'link': 'https://www.java.com/fr/'},
+                    {'name': 'Maven', 'link': 'http://maven.apache.org/'},
+                    {'name': 'MySQL', 'link': 'http://www.mysql.com/'},
+                    {'name': 'Git', 'link': 'http://git-scm.com/'},
+                    {'name': 'GitLab', 'link': 'https://about.gitlab.com/'},
+                    {'name': 'Debian', 'link': 'https://www.debian.org/index.fr.html'},
+                    {'name': 'Intellij IDEA', 'link': 'https://www.jetbrains.com/idea/'}]
             },
             {
                 'timeFrame': '2012 - 2013',
                 'title': $sce.trustAsHtml('Software engineer: <a href="http://www.synchronoss.com/">Synchronoss</a>.'),
                 'info': '(1 year - Marseille, France)',
-                'description': $sce.trustAsHtml('Android App development for Orange and Verizon carriers.<br/>Teamwork, user interfaces design, cloud synchronization.')
+                'description': $sce.trustAsHtml('Android App development for Orange and Verizon carriers.<br/>Teamwork, user interfaces design, cloud synchronization.'),
+                'stack': [
+                    {'name': 'Java', 'link': 'https://www.java.com/fr/'},
+                    {'name': 'Android SDK', 'link': 'http://developer.android.com/sdk/index.html'},
+                    {'name': 'JUnit', 'link': 'http://junit.org/'},
+                    {'name': 'Subversion', 'link': 'https://subversion.apache.org/'},
+                    {'name': 'Eclipse', 'link': 'https://eclipse.org/downloads/'}]
             },
             {
                 'timeFrame': '2012',
                 'title': $sce.trustAsHtml('Software engineer: <a href="http://www.soprasteria.com/">Sopra Steria</a>.'),
                 'info': '(3 months - Aix en Provence, France)',
-                'description': $sce.trustAsHtml('Initialization and development of Airbus Helicopters customer portal.<br/>Teamwork, industrialization of the development process, web architecture.')
+                'description': $sce.trustAsHtml('Initialization and development of Airbus Helicopters customer portal.<br/>Teamwork, industrialization of the development process, web architecture.'),
+                'stack': [
+                    {'name': 'Java', 'link': 'https://www.java.com/fr/'},
+                    {'name': 'JUnit', 'link': 'http://junit.org/'},
+                    {'name': 'Struts', 'link': 'https://struts.apache.org/'},
+                    {'name': 'Spring', 'link': 'https://spring.io/'},
+                    {'name': 'Hibernate', 'link': 'http://hibernate.org/'},
+                    {'name': 'SAP', 'link': 'http://www.sap.com/france/index.html'},
+                    {'name': 'SOAP', 'link': 'http://fr.wikipedia.org/wiki/SOAP'},
+                    {'name': 'MySQL', 'link': 'http://www.mysql.com/'},
+                    {'name': 'Subversion', 'link': 'https://subversion.apache.org/'},
+                    {'name': 'Eclipse', 'link': 'https://eclipse.org/downloads/'}]
             },
             {
                 'timeFrame': '2011',
                 'title': $sce.trustAsHtml('Graduation internship : <a href="http://www.airbushelicopters.com/">Airbus Helicopters</a>.'),
                 'info': '(6 months - Marignane, France)',
-                'description': $sce.trustAsHtml('Development of an electrical load analysis tool for helicopters.<br/>Project management, critical data handling, web development.')
+                'description': $sce.trustAsHtml('Development of an electrical load analysis tool for helicopters.<br/>Project management, critical data handling, web development.'),
+                'stack': [
+                    {'name': 'JavaScript', 'link': 'https://developer.mozilla.org/fr/docs/Web/JavaScript'},
+                    {'name': 'jQuery', 'link': 'http://jquery.com/'},
+                    {'name': 'PHP', 'link': 'http://php.net/'},
+                    {'name': 'MySQL', 'link': 'http://www.mysql.com/'},
+                    {'name': 'NetBeans', 'link': 'https://netbeans.org/'}]
             },
             {
                 'timeFrame': '2010',
                 'title': $sce.trustAsHtml('Internship: <a href="http://www.campusgroups.com/">CampusGroups</a>.'),
                 'info': '(2 months - New York, United States)',
-                'description': $sce.trustAsHtml('Monitoring tool for academic associations management platform.<br/>Teamwork in a growing start-up, web development.')
+                'description': $sce.trustAsHtml('Monitoring tool for academic associations management platform.<br/>Teamwork in a growing start-up, web development.'),
+                'stack': [
+                    {'name': 'JavaScript', 'link': 'https://developer.mozilla.org/fr/docs/Web/JavaScript'},
+                    {'name': 'jQuery', 'link': 'http://jquery.com/'},
+                    {'name': 'ASP.net', 'link': 'http://www.asp.net/'},
+                    {'name': 'MySQL', 'link': 'http://www.mysql.com/'},
+                    {'name': 'VisualStudio', 'link': 'https://www.visualstudio.com/'}]
             }
         ];
 
