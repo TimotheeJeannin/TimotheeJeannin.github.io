@@ -40,7 +40,7 @@ body {
 }
 
 .tj-stack.ng-hide {
-    display: inline-block!important;
+    display: inline-block !important;
     visibility: hidden;
     opacity: 0;
 }
@@ -50,11 +50,8 @@ body {
     padding-bottom: 10px;
 }
 
-.label-primary {
-    margin-right: 5px;
-}
-
 .label {
+    margin-right: 5px;
     border-radius: 0;
 }
 

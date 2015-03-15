@@ -42,7 +42,10 @@
                 <span class="tj-info">{{experience.info}}</span><br/>
                 <span ng-bind-html="experience.description"></span><br/>
                 <span class="tj-stack" ng-show="experience.hovered">
-                    <a class="label label-primary" ng-repeat="techno in experience.stack" ng-href="{{techno.link}}">{{techno.name}}</a>
+                    <span ng-repeat="techno in experience.stack">
+                        <a ng-href="{{techno.link}}">{{techno.name}}</a>
+                        <span ng-if="!$last">, </span>
+                    </span>
                 </span>
             </div>
         </div>
@@ -80,7 +83,10 @@
                     <span class="tj-title" ng-bind-html="project.title"></span><br/>
                     <span ng-bind-html="project.description"></span>
                     <span class="tj-stack" ng-show="project.hovered">
-                        <a class="label label-primary" ng-repeat="techno in project.stack" ng-href="{{techno.link}}">{{techno.name}}</a>
+                        <span ng-repeat="techno in project.stack">
+                        <a ng-href="{{techno.link}}">{{techno.name}}</a>
+                        <span ng-if="!$last">, </span>
+                    </span>
                     </span>
                 </div>
             </div>
