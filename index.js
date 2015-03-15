@@ -80,21 +80,6 @@ angular.module('App', [])
                 ]
             },
             {
-                'name': 'Operating Systems',
-                'skills': [
-                    {'name': 'Ubuntu', 'evaluation': '90%'},
-                    {'name': 'Windows', 'evaluation': '80%'},
-                    {'name': 'OS X', 'evaluation': '30%'}
-                ]
-            },
-            {
-                'name': 'IDE',
-                'skills': [
-                    {'name': 'Intellij IDEA', 'evaluation': '90%'},
-                    {'name': 'Eclipse', 'evaluation': '60%'}
-                ]
-            },
-            {
                 'name': 'Deployment',
                 'skills': [
                     {'name': 'Fabric', 'evaluation': '70%'},
@@ -111,9 +96,24 @@ angular.module('App', [])
                     {'name': 'Amazon EC2', 'evaluation': '60%'},
                     {'name': 'Amazon Route 53', 'evaluation': '40%'},
                     {'name': 'YouTube API', 'evaluation': '60%'},
-                    {'name': 'Google Admin SDK', 'evaluation': '60%'},
-                    {'name': 'Google Cloud Messaging', 'evaluation': '40%'}
+                    {'name': 'Google Admin SDK', 'evaluation': '60%'}
+                ]
+            },
+            {
+                'name': 'Operating Systems',
+                'skills': [
+                    {'name': 'Ubuntu', 'evaluation': '90%'},
+                    {'name': 'Windows', 'evaluation': '80%'},
+                    {'name': 'OS X', 'evaluation': '30%'}
+                ]
+            },
+            {
+                'name': 'IDE',
+                'skills': [
+                    {'name': 'Intellij IDEA', 'evaluation': '90%'},
+                    {'name': 'Eclipse', 'evaluation': '60%'}
                 ]
             }
+
         ];
     });
