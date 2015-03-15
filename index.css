@@ -45,9 +45,25 @@ body {
     opacity: 0;
 }
 
+@media print {
+    .tj-stack {
+        -webkit-transition: all 0 ease 0;
+        transition: all 0 ease 0;
+    }
+
+    .tj-stack.ng-hide {
+        visibility: visible !important;
+        opacity: 1 !important;
+    }
+}
+
 .tj-spaced {
     padding-top: 10px;
     padding-bottom: 10px;
+}
+
+ul {
+    margin-bottom: 0;
 }
 
 .label {
