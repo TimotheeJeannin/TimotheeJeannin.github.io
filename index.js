@@ -103,6 +103,7 @@ angular.module('App', [])
                 'name': 'Operating Systems',
                 'skills': [
                     {'name': 'Ubuntu', 'evaluation': '90%'},
+                    {'name': 'Debian', 'evaluation': '80%'},
                     {'name': 'Windows', 'evaluation': '80%'},
                     {'name': 'OS X', 'evaluation': '30%'}
                 ]
@@ -114,6 +115,5 @@ angular.module('App', [])
                     {'name': 'Eclipse', 'evaluation': '60%'}
                 ]
             }
-
         ];
     });
