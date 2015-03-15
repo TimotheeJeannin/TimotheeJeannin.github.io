@@ -10,6 +10,8 @@
     <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular-animate.min.js"></script>
     <script src="index.js"></script>
 </head>
 <body ng-app="App">
@@ -119,10 +121,12 @@
 
             <div class="row tj-spaced" ng-repeat="project in personalProjects">
                 <div class="col-md-2 text-right hidden-xs hidden-sm tj-visible-print-block">{{project.timeFrame}}</div>
-                <div class="col-md-10">
+                <div class="col-md-7" ng-mouseenter="project.hovered = true" ng-mouseleave="project.hovered = false">
                     <span class="tj-title" ng-bind-html="project.title"></span><br/>
                     <span ng-bind-html="project.description"></span>
-                    <a class="label label-primary" ng-repeat="techno in project.stack" ng-href="{{techno.link}}">{{techno.name}}</a>
+                    <span class="tj-stack" ng-show="project.hovered">
+                        <a class="label label-primary" ng-repeat="techno in project.stack" ng-href="{{techno.link}}">{{techno.name}}</a>
+                    </span>
                 </div>
             </div>
         </div>

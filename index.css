@@ -34,8 +34,20 @@ body {
     font-style: italic;
 }
 
+.tj-stack {
+    -webkit-transition: all linear 0.5s;
+    transition: all linear 0.5s;
+}
+
+.tj-stack.ng-hide {
+    display: inline-block!important;
+    visibility: hidden;
+    opacity: 0;
+}
+
 .tj-spaced {
-    padding-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .label-primary {

@@ -1,4 +1,4 @@
-angular.module('App', [])
+angular.module('App', ['ngAnimate'])
     .controller('Controller', function ($scope, $sce) {
         $scope.personalProjects = [
             {
