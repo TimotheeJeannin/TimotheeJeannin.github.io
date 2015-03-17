@@ -38,7 +38,8 @@ angular.module('App', ['ngAnimate'])
                 'timeFrame': '2012',
                 'title': $sce.trustAsHtml('Software engineer: <a href="http://www.soprasteria.com/">Sopra Steria</a>.'),
                 'info': '(3 months - Aix en Provence, France)',
-                'description': $sce.trustAsHtml('Initialization and development of Airbus Helicopters customer portal.<br/>Teamwork, industrialization of the development process, web architecture.'),
+                'description': $sce.trustAsHtml('Implemented Airbus\'s customer portal which allows a customer <br/>' +
+                'to order maintenance visits, repairs and upgrades for its helicopter fleet.'),
                 'stack': [
                     {'name': 'Java', 'link': 'https://www.java.com/fr/'},
                     {'name': 'JUnit', 'link': 'http://junit.org/'},
@@ -55,7 +56,8 @@ angular.module('App', ['ngAnimate'])
                 'timeFrame': '2011',
                 'title': $sce.trustAsHtml('Graduation internship : <a href="http://www.airbushelicopters.com/">Airbus Helicopters</a>.'),
                 'info': '(6 months - Marignane, France)',
-                'description': $sce.trustAsHtml('Development of an electrical load analysis tool for helicopters.<br/>Project management, critical data handling, web development.'),
+                'description': $sce.trustAsHtml('Developed an electrical load analysis tool to validate helicopters\' proper electrical wiring. <br/>' +
+                'Along with two other team members, integrated the product in the testing process of helicopters.'),
                 'stack': [
                     {'name': 'JavaScript', 'link': 'https://developer.mozilla.org/fr/docs/Web/JavaScript'},
                     {'name': 'jQuery', 'link': 'http://jquery.com/'},
@@ -67,7 +69,7 @@ angular.module('App', ['ngAnimate'])
                 'timeFrame': '2010',
                 'title': $sce.trustAsHtml('Internship: <a href="http://www.campusgroups.com/">CampusGroups</a>.'),
                 'info': '(2 months - New York, United States)',
-                'description': $sce.trustAsHtml('Monitoring tool for academic associations management platform.<br/>Teamwork in a growing start-up, web development.'),
+                'description': $sce.trustAsHtml('Developed a tool that collects usage statistics of CampusGroups\'s flagship product.'),
                 'stack': [
                     {'name': 'JavaScript', 'link': 'https://developer.mozilla.org/fr/docs/Web/JavaScript'},
                     {'name': 'jQuery', 'link': 'http://jquery.com/'},
