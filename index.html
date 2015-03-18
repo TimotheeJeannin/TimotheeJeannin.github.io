@@ -37,10 +37,10 @@
         </div>
         <div class="row tj-spaced" ng-repeat="experience in experiences">
             <div class="col-md-2 text-right hidden-xs hidden-sm tj-visible-print-block">{{experience.timeFrame}}</div>
-            <div class="col-md-10" ng-mouseenter="experience.hovered = true" ng-mouseleave="experience.hovered = false">
+            <div class="col-md-8" ng-mouseenter="experience.hovered = true" ng-mouseleave="experience.hovered = false">
                 <span class="tj-title" ng-bind-html="experience.title"></span>
                 <span class="tj-info">{{experience.info}}</span><br/>
-                <span ng-bind-html="experience.description"></span><br/>
+                <span ng-bind-html="experience.description"></span>
                 <span class="tj-stack" ng-show="experience.hovered">
                     <span ng-repeat="techno in experience.stack">
                         <a ng-href="{{techno.link}}">{{techno.name}}</a>

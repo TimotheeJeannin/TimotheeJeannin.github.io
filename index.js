@@ -6,7 +6,10 @@ angular.module('App', ['ngAnimate'])
                 'timeFrame': '2013 - Now',
                 'title': $sce.trustAsHtml('Software engineer / Project manager: <a href="http://www.letsignit.com/">Letsignit</a>.'),
                 'info': '(1 year and 6 months - Marseille, France)',
-                'description': $sce.trustAsHtml('Project management, Web applications, Browser extensions, Web services.<br/>Responsible for defining development methodologies across the enterprise.'),
+                'description': $sce.trustAsHtml('Responsible for defining development methodologies used by the team. ( <a href="dev_guidelines.pdf">guidelines</a>, ... )<br/>' +
+                'Developed a chrome extension that automatically inserts a personalised email signature <br/> on GMail and Office365. ' +
+                'Shipped the extension to 15 000 users.<br/>' +
+                'Implemented an administrative console that allows system administrators <br/> to configure their SMTP server and synchronise LetSignIt with their LDAP directory.<br/>'),
                 'stack': [
                     {'name': 'Python', 'link': 'https://www.python.org/'},
                     {'name': 'Flask', 'link': 'http://flask.pocoo.org/'},
@@ -26,7 +29,8 @@ angular.module('App', ['ngAnimate'])
                 'timeFrame': '2012 - 2013',
                 'title': $sce.trustAsHtml('Software engineer: <a href="http://www.synchronoss.com/">Synchronoss</a>.'),
                 'info': '(1 year - Marseille, France)',
-                'description': $sce.trustAsHtml('Android App development for Orange and Verizon carriers.<br/>Teamwork, user interfaces design, cloud synchronization.'),
+                'description': $sce.trustAsHtml('Developed several components of the backup & restore Android application <br/>' +
+                'that comes pre-installed with Verizon\'s phones.<br/>'),
                 'stack': [
                     {'name': 'Java', 'link': 'https://www.java.com/fr/'},
                     {'name': 'Android SDK', 'link': 'http://developer.android.com/sdk/index.html'},
@@ -39,7 +43,7 @@ angular.module('App', ['ngAnimate'])
                 'title': $sce.trustAsHtml('Software engineer: <a href="http://www.soprasteria.com/">Sopra Steria</a>.'),
                 'info': '(3 months - Aix en Provence, France)',
                 'description': $sce.trustAsHtml('Implemented Airbus\'s customer portal which allows a customer <br/>' +
-                'to order maintenance visits, repairs and upgrades for its helicopter fleet.'),
+                'to order maintenance visits, repairs and upgrades for its helicopter fleet.<br/>'),
                 'stack': [
                     {'name': 'Java', 'link': 'https://www.java.com/fr/'},
                     {'name': 'JUnit', 'link': 'http://junit.org/'},
@@ -57,7 +61,7 @@ angular.module('App', ['ngAnimate'])
                 'title': $sce.trustAsHtml('Graduation internship : <a href="http://www.airbushelicopters.com/">Airbus Helicopters</a>.'),
                 'info': '(6 months - Marignane, France)',
                 'description': $sce.trustAsHtml('Developed an electrical load analysis tool to validate helicopters\' proper electrical wiring. <br/>' +
-                'Along with two other team members, integrated the product in the testing process of helicopters.'),
+                'Integrated the product in the testing process of helicopters.<br/>'),
                 'stack': [
                     {'name': 'JavaScript', 'link': 'https://developer.mozilla.org/fr/docs/Web/JavaScript'},
                     {'name': 'jQuery', 'link': 'http://jquery.com/'},
@@ -69,7 +73,7 @@ angular.module('App', ['ngAnimate'])
                 'timeFrame': '2010',
                 'title': $sce.trustAsHtml('Internship: <a href="http://www.campusgroups.com/">CampusGroups</a>.'),
                 'info': '(2 months - New York, United States)',
-                'description': $sce.trustAsHtml('Developed a tool that collects usage statistics of CampusGroups\'s flagship product.'),
+                'description': $sce.trustAsHtml('Developed a tool that collects usage statistics of CampusGroups\'s flagship product.<br/>'),
                 'stack': [
                     {'name': 'JavaScript', 'link': 'https://developer.mozilla.org/fr/docs/Web/JavaScript'},
                     {'name': 'jQuery', 'link': 'http://jquery.com/'},
@@ -81,7 +85,7 @@ angular.module('App', ['ngAnimate'])
 
         $scope.personalProjects = [
             {
-                'timeFrame': '2012 - Now',
+                'timeFrame': '2015 - Now',
                 'title': $sce.trustAsHtml('Automated Youtube Channel: <a href="https://www.youtube.com/channel/UCsuAMQ97Gq0oy1pub04o4wA">DotaDroid</a>.'),
                 'description': $sce.trustAsHtml('DotaDroid finds interesting Dota2 actions and upload them on YouTube.<br/>'),
                 'stack': [{'name': 'Python', 'link': 'https://www.python.org/'},
@@ -109,8 +113,8 @@ angular.module('App', ['ngAnimate'])
                     {'name': 'Peerflix', 'link': 'https://github.com/mafintosh/peerflix'}]
             },
             {
-                'timeFrame': '2012 - Now',
-                'title': $sce.trustAsHtml('Android App: <a href="http://circlealarm.com">CircleAlarm</a>.'),
+                'timeFrame': '2012 - 2013',
+                'title': $sce.trustAsHtml('Android Application: <a href="http://circlealarm.com">CircleAlarm</a>.'),
                 'description': $sce.trustAsHtml('An alarm clock for android that talks and snoozes when flipped over.<br/>' +
                 'More than 80 000 downloads and an average rating of 4.6 out of 5.<ul>' +
                 '<li>Top 10 of the best free apps of all times on <a href="http://www.alltechtricks.org/top-10-best-android-apps-for-free/">alltechtricks.com</a></li>' +
