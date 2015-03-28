@@ -33,60 +33,65 @@
     <div class="row">
         <div class="col-md-12">
             <h1 class="tj-section-title">Experiences</h1>
-        </div>
-        <div class="row tj-spaced" ng-repeat="experience in experiences">
-            <div class="col-md-2 text-right hidden-xs hidden-sm tj-visible-print-block">{{experience.timeFrame}}</div>
-            <div class="col-md-8" ng-mouseenter="experience.hovered = true" ng-mouseleave="experience.hovered = false">
-                <span class="tj-title" ng-bind-html="experience.title"></span>
-                <span class="tj-info">{{experience.info}}</span><br/>
-                <span ng-bind-html="experience.description"></span>
-                <span class="tj-stack" ng-show="experience.hovered">
-                    <span ng-repeat="techno in experience.stack">
-                        <a ng-href="{{techno.link}}">{{techno.name}}</a>
-                        <span ng-if="!$last">, </span>
+
+            <div class="row tj-spaced" ng-repeat="experience in experiences">
+                <div class="col-md-2 text-right hidden-xs hidden-sm tj-visible-print-block">{{experience.timeFrame}}
+                </div>
+                <div class="col-md-8" ng-mouseenter="experience.hovered = true"
+                     ng-mouseleave="experience.hovered = false">
+                    <span class="tj-title" ng-bind-html="experience.title"></span>
+                    <span class="tj-info">{{experience.info}}</span><br/>
+                    <span ng-bind-html="experience.description"></span>
+                    <span class="tj-stack" ng-show="experience.hovered">
+                        <span ng-repeat="techno in experience.stack">
+                            <a ng-href="{{techno.link}}">{{techno.name}}</a>
+                            <span ng-if="!$last">, </span>
+                        </span>
                     </span>
-                </span>
+                </div>
             </div>
         </div>
     </div>
     <div class="row">
         <div class="col-md-12">
             <h1 class="tj-section-title">Education</h1>
-        </div>
-        <div class="row tj-spaced">
-            <div class="col-md-2 text-right hidden-xs hidden-sm tj-visible-print-block">2008 - 2011</div>
-            <div class="col-md-10">
+
+            <div class="row tj-spaced">
+                <div class="col-md-2 text-right hidden-xs hidden-sm tj-visible-print-block">2008 - 2011</div>
+                <div class="col-md-10">
                 <span class="tj-title">Master-level Engineering degree from
                     <a href="https://www.centrale-marseille.fr/"> Ecole Centrale Marseille</a></span>
-                <span class="tj-info">(3 years - Marseille, France)</span><br/>
-                A French engineering school which awards the Master's Degree in Computer Science and Engineering.
+                    <span class="tj-info">(3 years - Marseille, France)</span><br/>
+                    A French engineering school which awards the Master's Degree in Computer Science and Engineering.
+                </div>
             </div>
-        </div>
-        <div class="row tj-spaced">
-            <div class="col-md-2 text-right hidden-xs hidden-sm tj-visible-print-block">2006 - 2008</div>
-            <div class="col-md-10">
-                <span class="tj-title">Classe Préparatoire at Lycée Turgot</span>
-                <span class="tj-info">(2 years - Paris, France)</span><br/>
-                Two years intensive undergraduate course, specialized in Maths and Physics,<br/>
-                to prepare for competitive exam to enter French engineering schools.
+            <div class="row tj-spaced">
+                <div class="col-md-2 text-right hidden-xs hidden-sm tj-visible-print-block">2006 - 2008</div>
+                <div class="col-md-10">
+                    <span class="tj-title">Classe Préparatoire at Lycée Turgot</span>
+                    <span class="tj-info">(2 years - Paris, France)</span><br/>
+                    Two years intensive undergraduate course, specialized in Maths and Physics,<br/>
+                    to prepare for competitive exam to enter French engineering schools.
+                </div>
             </div>
         </div>
     </div>
     <div class="row">
         <div class="col-md-12">
             <h1 class="tj-section-title">Personal Projects</h1>
-        </div>
-        <div class="row tj-spaced" ng-repeat="project in personalProjects">
-            <div class="col-md-2 text-right hidden-xs hidden-sm tj-visible-print-block">{{project.timeFrame}}</div>
-            <div class="col-md-7" ng-mouseenter="project.hovered = true" ng-mouseleave="project.hovered = false">
-                <span class="tj-title" ng-bind-html="project.title"></span><br/>
-                <span ng-bind-html="project.description"></span>
+
+            <div class="row tj-spaced" ng-repeat="project in personalProjects">
+                <div class="col-md-2 text-right hidden-xs hidden-sm tj-visible-print-block">{{project.timeFrame}}</div>
+                <div class="col-md-7" ng-mouseenter="project.hovered = true" ng-mouseleave="project.hovered = false">
+                    <span class="tj-title" ng-bind-html="project.title"></span><br/>
+                    <span ng-bind-html="project.description"></span>
                     <span class="tj-stack" ng-show="project.hovered">
                         <span ng-repeat="techno in project.stack">
                         <a ng-href="{{techno.link}}">{{techno.name}}</a>
                         <span ng-if="!$last">, </span>
                     </span>
                     </span>
+                </div>
             </div>
         </div>
     </div>
