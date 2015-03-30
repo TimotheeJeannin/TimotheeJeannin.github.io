@@ -72,21 +72,17 @@ ul {
 }
 
 div.progress {
-    background-color: #ffffff;
+    background-color: rgba(255, 255, 255, .3);
     border-radius: 0;
-    margin-top: 13px;
-    box-shadow: 0 0 4px #a8a8a8;
+    margin-top: 9px;
+    box-shadow: 0 0 1px #a8a8a8;
     margin-bottom: 3px;
     height: 4px;
 }
 
-div.progress div.progress-bar {
-    float: right;
-}
-
 @media print {
     div.progress {
-        background-color: lightgray;
+        background-color: #e7e7e7;
         border: 0;
         box-shadow: none;
     }
