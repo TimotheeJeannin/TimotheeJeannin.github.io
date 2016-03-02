@@ -219,6 +219,7 @@ angular.module('App', ['ngAnimate'])
                 'skills': [
                     {'name': 'Jenkins', 'evaluation': '80%'},
                     {'name': 'Travis', 'evaluation': '60%'},
+                    {'name': 'CodeShip', 'evaluation': '80%'},
                     {'name': 'TeamCity', 'evaluation': '20%'}
                 ]
             },
@@ -241,22 +242,30 @@ angular.module('App', ['ngAnimate'])
                 'name': 'Deployment',
                 'skills': [
                     {'name': 'Ansible', 'evaluation': '30%'},
-                    {'name': 'Docker', 'evaluation': '20%'},
+                    {'name': 'Docker', 'evaluation': '50%'},
                     {'name': 'Fabric', 'evaluation': '70%'},
                     {'name': 'Gunicorn', 'evaluation': '70%'},
                     {'name': 'Nginx', 'evaluation': '40%'},
-                    {'name': 'Puppet', 'evaluation': '20%'},
+                    {'name': 'Puppet', 'evaluation': '10%'},
                     {'name': 'Tomcat', 'evaluation': '20%'}
                 ]
             },
             {
-                'name': 'Cloud',
+                'name': 'Amazon Web Services',
                 'skills': [
-                    {'name': 'Amazon S3', 'evaluation': '80%'},
-                    {'name': 'Amazon EC2', 'evaluation': '60%'},
-                    {'name': 'Amazon Route 53', 'evaluation': '40%'},
+                    {'name': 'S3', 'evaluation': '80%'},
+                    {'name': 'EC2', 'evaluation': '60%'},
+                    {'name': 'Route 53', 'evaluation': '40%'},
+                    {'name': 'Elastic Beanstalk', 'evaluation': '50%'}
+                ]
+            },
+            {
+                'name': 'Google Cloud Platform',
+                'skills': [
                     {'name': 'YouTube API', 'evaluation': '60%'},
-                    {'name': 'Google Admin SDK', 'evaluation': '60%'}
+                    {'name': 'Admin SDK', 'evaluation': '60%'},
+                    {'name': 'App Engine', 'evaluation': '60%'},
+                    {'name': 'Cloud SQL', 'evaluation': '70%'}
                 ]
             },
             {
