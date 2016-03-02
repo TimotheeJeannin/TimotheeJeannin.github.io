@@ -86,6 +86,18 @@ angular.module('App', ['ngAnimate'])
         $scope.personalProjects = [
             {
                 'timeFrame': '2015 - Now',
+                'title': $sce.trustAsHtml('Game Recording Service: <a href="https://dotamemories.com">DotaMemories</a>.'),
+                'description': $sce.trustAsHtml('Automatically records games of subscribed players and publish them on YouTube.<br/>'),
+                'stack': [{'name': 'Python', 'link': 'https://www.python.org/'},
+                    {'name': 'Flask', 'link': 'http://flask.pocoo.org/'},
+                    {'name': 'C# Mono', 'link': 'http://www.mono-project.com/'},
+                    {'name': 'AngularJS', 'link': 'https://angularjs.org/'},
+                    {'name': 'Java', 'link': 'https://www.java.com/fr/'},
+                    {'name': 'Gradle', 'link': 'https://gradle.org/'},
+                    {'name': 'Google Protobuf', 'link': 'https://github.com/google/protobuf'}]
+            },
+            {
+                'timeFrame': '2015 - 2015',
                 'title': $sce.trustAsHtml('Automated Youtube Channel: <a href="https://www.youtube.com/channel/UCsuAMQ97Gq0oy1pub04o4wA">DotaDroid</a>.'),
                 'description': $sce.trustAsHtml('DotaDroid finds interesting Dota2 actions and upload them on YouTube.<br/>'),
                 'stack': [{'name': 'Python', 'link': 'https://www.python.org/'},
