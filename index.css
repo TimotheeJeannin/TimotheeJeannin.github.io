@@ -37,22 +37,16 @@ body {
 .tj-stack {
     -webkit-transition: all linear 0.5s;
     transition: all linear 0.5s;
+    display: inline-block;
+    opacity: 0;
 }
 
-.tj-stack.ng-hide {
-    display: inline-block !important;
-    visibility: hidden;
-    opacity: 0;
+.row.tj-spaced:hover .tj-stack {
+    opacity: 1;
 }
 
 @media print {
     .tj-stack {
-        -webkit-transition: all 0 ease 0;
-        transition: all 0 ease 0;
-    }
-
-    .tj-stack.ng-hide {
-        visibility: visible !important;
         opacity: 1 !important;
     }
 }

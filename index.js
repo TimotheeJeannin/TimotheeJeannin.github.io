@@ -1,15 +1,15 @@
-angular.module('App', ['ngAnimate'])
-    .controller('Controller', function ($scope, $sce) {
-
-        $scope.experiences = [
+new Vue({
+    el: '#app',
+    data: {
+        experiences: [
             {
                 'timeFrame': '2013 - Now',
-                'title': $sce.trustAsHtml('Software engineer / Project manager: <a href="http://www.letsignit.com/">Letsignit</a>.'),
+                'title': 'Software engineer / Project manager: <a href="http://www.letsignit.com/">Letsignit</a>.',
                 'info': '(1 year and 6 months - Marseille, France)',
-                'description': $sce.trustAsHtml('Responsible for defining development methodologies used by the team. ( <a href="dev_guidelines.pdf">guidelines</a>, ... )<br/>' +
-                    'Developed a chrome extension that automatically inserts a personalised email signature <br/> on GMail and Office365. ' +
-                    'Shipped the extension to 15 000 users.<br/>' +
-                    'Implemented an administrative console that allows system administrators <br/> to configure their SMTP server and synchronise LetSignIt with their LDAP directory.<br/>'),
+                'description': 'Responsible for defining development methodologies used by the team. ( <a href="dev_guidelines.pdf">guidelines</a>, ... )<br/>' +
+                'Developed a chrome extension that automatically inserts a personalised email signature <br/> on GMail and Office365. ' +
+                'Shipped the extension to 15 000 users.<br/>' +
+                'Implemented an administrative console that allows system administrators <br/> to configure their SMTP server and synchronise LetSignIt with their LDAP directory.<br/>',
                 'stack': [
                     {'name': 'Python', 'link': 'https://www.python.org/'},
                     {'name': 'Flask', 'link': 'http://flask.pocoo.org/'},
@@ -27,10 +27,10 @@ angular.module('App', ['ngAnimate'])
             },
             {
                 'timeFrame': '2012 - 2013',
-                'title': $sce.trustAsHtml('Software engineer: <a href="http://www.synchronoss.com/">Synchronoss</a>.'),
+                'title': 'Software engineer: <a href="http://www.synchronoss.com/">Synchronoss</a>.',
                 'info': '(1 year - Marseille, France)',
-                'description': $sce.trustAsHtml('Developed several components of the backup & restore Android application <br/>' +
-                    'that comes pre-installed with Verizon\'s phones.<br/>'),
+                'description': 'Developed several components of the backup & restore Android application <br/>' +
+                'that comes pre-installed with Verizon\'s phones.<br/>',
                 'stack': [
                     {'name': 'Java', 'link': 'https://www.java.com/fr/'},
                     {'name': 'Android SDK', 'link': 'http://developer.android.com/sdk/index.html'},
@@ -40,10 +40,10 @@ angular.module('App', ['ngAnimate'])
             },
             {
                 'timeFrame': '2012',
-                'title': $sce.trustAsHtml('Software engineer: <a href="http://www.soprasteria.com/">Sopra Steria</a>.'),
+                'title': 'Software engineer: <a href="http://www.soprasteria.com/">Sopra Steria</a>.',
                 'info': '(3 months - Aix en Provence, France)',
-                'description': $sce.trustAsHtml('Implemented Airbus\'s customer portal which allows a customer <br/>' +
-                    'to order maintenance visits, repairs and upgrades for its helicopter fleet.<br/>'),
+                'description': 'Implemented Airbus\'s customer portal which allows a customer <br/>' +
+                'to order maintenance visits, repairs and upgrades for its helicopter fleet.<br/>',
                 'stack': [
                     {'name': 'Java', 'link': 'https://www.java.com/fr/'},
                     {'name': 'JUnit', 'link': 'http://junit.org/'},
@@ -58,10 +58,10 @@ angular.module('App', ['ngAnimate'])
             },
             {
                 'timeFrame': '2011',
-                'title': $sce.trustAsHtml('Graduation internship : <a href="http://www.airbushelicopters.com/">Airbus Helicopters</a>.'),
+                'title': 'Graduation internship : <a href="http://www.airbushelicopters.com/">Airbus Helicopters</a>.',
                 'info': '(6 months - Marignane, France)',
-                'description': $sce.trustAsHtml('Developed an electrical load analysis tool to validate helicopters\' proper electrical wiring. <br/>' +
-                    'Integrated the product in the testing process of helicopters.<br/>'),
+                'description': 'Developed an electrical load analysis tool to validate helicopters\' proper electrical wiring. <br/>' +
+                'Integrated the product in the testing process of helicopters.<br/>',
                 'stack': [
                     {'name': 'JavaScript', 'link': 'https://developer.mozilla.org/fr/docs/Web/JavaScript'},
                     {'name': 'jQuery', 'link': 'http://jquery.com/'},
@@ -71,9 +71,9 @@ angular.module('App', ['ngAnimate'])
             },
             {
                 'timeFrame': '2010',
-                'title': $sce.trustAsHtml('Internship: <a href="http://www.campusgroups.com/">CampusGroups</a>.'),
+                'title': 'Internship: <a href="http://www.campusgroups.com/">CampusGroups</a>.',
                 'info': '(2 months - New York, United States)',
-                'description': $sce.trustAsHtml('Developed a tool that collects usage statistics of CampusGroups\'s flagship product.<br/>'),
+                'description': 'Developed a tool that collects usage statistics of CampusGroups\'s flagship product.<br/>',
                 'stack': [
                     {'name': 'JavaScript', 'link': 'https://developer.mozilla.org/fr/docs/Web/JavaScript'},
                     {'name': 'jQuery', 'link': 'http://jquery.com/'},
@@ -81,13 +81,12 @@ angular.module('App', ['ngAnimate'])
                     {'name': 'MySQL', 'link': 'http://www.mysql.com/'},
                     {'name': 'VisualStudio', 'link': 'https://www.visualstudio.com/'}]
             }
-        ];
-
-        $scope.personalProjects = [
+        ],
+        personalProjects: [
             {
                 'timeFrame': '2015 - Now',
-                'title': $sce.trustAsHtml('Game Recording Service: <a href="https://dotamemories.com">DotaMemories</a>.'),
-                'description': $sce.trustAsHtml('Automatically records games of subscribed players and publish them on YouTube.<br/>'),
+                'title': 'Game Recording Service: <a href="https://dotamemories.com">DotaMemories</a>.',
+                'description': 'Automatically records games of subscribed players and publish them on YouTube.<br/>',
                 'stack': [{'name': 'Python', 'link': 'https://www.python.org/'},
                     {'name': 'Flask', 'link': 'http://flask.pocoo.org/'},
                     {'name': 'C# Mono', 'link': 'http://www.mono-project.com/'},
@@ -98,8 +97,8 @@ angular.module('App', ['ngAnimate'])
             },
             {
                 'timeFrame': '2015 - 2015',
-                'title': $sce.trustAsHtml('Automated Youtube Channel: <a href="https://www.youtube.com/channel/UCsuAMQ97Gq0oy1pub04o4wA">DotaDroid</a>.'),
-                'description': $sce.trustAsHtml('DotaDroid finds interesting Dota2 actions and upload them on YouTube.<br/>'),
+                'title': 'Automated Youtube Channel: <a href="https://www.youtube.com/channel/UCsuAMQ97Gq0oy1pub04o4wA">DotaDroid</a>.',
+                'description': 'DotaDroid finds interesting Dota2 actions and upload them on YouTube.<br/>',
                 'stack': [{'name': 'Python', 'link': 'https://www.python.org/'},
                     {'name': 'Redis', 'link': 'http://redis.io/'},
                     {'name': 'Rq', 'link': 'http://python-rq.org/'},
@@ -112,9 +111,9 @@ angular.module('App', ['ngAnimate'])
             },
             {
                 'timeFrame': '2014 - Now',
-                'title': $sce.trustAsHtml('Desktop Application: <a href="http://www.streamtim.com/">StreamTim</a>.'),
-                'description': $sce.trustAsHtml('Allows you to stream a movie in <a href="http://www.videolan.org/vlc/">Vlc</a> ' +
-                    'from a torrent link / magnet link.<br/>'),
+                'title': 'Desktop Application: <a href="http://www.streamtim.com/">StreamTim</a>.',
+                'description': 'Allows you to stream a movie in <a href="http://www.videolan.org/vlc/">Vlc</a> ' +
+                'from a torrent link / magnet link.<br/>',
                 'stack': [{'name': 'NW.js', 'link': 'https://github.com/nwjs/nw.js'},
                     {'name': 'Grunt', 'link': 'http://gruntjs.com/'},
                     {'name': 'Karma', 'link': 'http://karma-runner.github.io/0.12/index.html'},
@@ -126,13 +125,13 @@ angular.module('App', ['ngAnimate'])
             },
             {
                 'timeFrame': '2012 - 2013',
-                'title': $sce.trustAsHtml('Android Application: <a href="http://circlealarm.com">CircleAlarm</a>.'),
-                'description': $sce.trustAsHtml('An alarm clock for android that talks and snoozes when flipped over.<br/>' +
-                    'More than 80 000 downloads and an average rating of 4.6 out of 5.<ul>' +
-                    '<li>Top 10 of the best free apps of all times on <a href="http://www.alltechtricks.org/top-10-best-android-apps-for-free/">alltechtricks.com</a></li>' +
-                    '<li>First of the apps of the week on <a href="http://androidandme.com/2012/10/applications/top-10-most-popular-android-apps-from-last-week-circle-alarm-nba-2k13-right-click/">androidandme.com</a></li>' +
-                    '<li>Selected as android application of the week by <a href="http://www.presse-citron.net/les-applis-a-telecharger-cette-semaine-polagram-circle-alarm-doo-net-appswitch/">presse-citron.net</a></li>' +
-                    '</ul>'),
+                'title': 'Android Application: <a href="http://circlealarm.com">CircleAlarm</a>.',
+                'description': 'An alarm clock for android that talks and snoozes when flipped over.<br/>' +
+                'More than 80 000 downloads and an average rating of 4.6 out of 5.<ul>' +
+                '<li>Top 10 of the best free apps of all times on <a href="http://www.alltechtricks.org/top-10-best-android-apps-for-free/">alltechtricks.com</a></li>' +
+                '<li>First of the apps of the week on <a href="http://androidandme.com/2012/10/applications/top-10-most-popular-android-apps-from-last-week-circle-alarm-nba-2k13-right-click/">androidandme.com</a></li>' +
+                '<li>Selected as android application of the week by <a href="http://www.presse-citron.net/les-applis-a-telecharger-cette-semaine-polagram-circle-alarm-doo-net-appswitch/">presse-citron.net</a></li>' +
+                '</ul>',
                 'stack': [{'name': 'Java', 'link': 'https://www.java.com/fr/'},
                     {'name': 'Android SDK', 'link': 'http://developer.android.com/sdk/index.html'},
                     {'name': 'Joda Time', 'link': 'http://www.joda.org/joda-time/'},
@@ -145,19 +144,18 @@ angular.module('App', ['ngAnimate'])
             },
             {
                 'timeFrame': '2012 - Now',
-                'title': $sce.trustAsHtml('Android Open Source Library: <a href="http://github.com/TimotheeJeannin/ProviGen">ProviGen</a>.'),
-                'description': $sce.trustAsHtml('A database management tool to easily make a <a href="https://developer.android.com/reference/android/content/ContentProvider.html">ContentProvider</a> ' +
-                    'from an annotated <a href="http://developer.android.com/guide/topics/providers/content-provider-basics.html#ContractClasses">ContractClass</a>.' +
-                    '<ul><li>Selected and published as library of the week by <a href="http://androidweekly.net/issues/issue-57">androidweekly.net</a></li></ul>'),
+                'title': 'Android Open Source Library: <a href="http://github.com/TimotheeJeannin/ProviGen">ProviGen</a>.',
+                'description': 'A database management tool to easily make a <a href="https://developer.android.com/reference/android/content/ContentProvider.html">ContentProvider</a> ' +
+                'from an annotated <a href="http://developer.android.com/guide/topics/providers/content-provider-basics.html#ContractClasses">ContractClass</a>.' +
+                '<ul><li>Selected and published as library of the week by <a href="http://androidweekly.net/issues/issue-57">androidweekly.net</a></li></ul>',
                 'stack': [{'name': 'Java', 'link': 'https://www.java.com/fr/'},
                     {'name': 'Android SDK', 'link': 'http://developer.android.com/sdk/index.html'},
                     {'name': 'JUnit', 'link': 'http://junit.org/'},
                     {'name': 'Git', 'link': 'http://git-scm.com/'},
                     {'name': 'Gradle', 'link': 'https://gradle.org/'}]
             }
-        ];
-
-        $scope.skillSets = [
+        ],
+        skillSets: [
             {
                 'name': 'Front-End',
                 'skills': [
@@ -285,5 +283,6 @@ angular.module('App', ['ngAnimate'])
                     {'name': 'NetBeans', 'evaluation': '30%'}
                 ]
             }
-        ];
-    });
+        ]
+    }
+});

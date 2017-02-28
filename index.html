@@ -1,18 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:v-bind="http://www.w3.org/1999/xhtml">
 <head>
     <title>Timothée Jeannin</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" media="screen">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css" media="screen">
     <link rel="stylesheet" href="printable-bootstrap.css" media="print">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="index.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-animate.min.js"></script>
-    <script src="index.js"></script>
 </head>
-<body ng-app="App">
-<div class="container" ng-controller="Controller">
+<body>
+<div class="container" id="app">
     <div class="row">
         <div class="col-md-7">
             <h1 style="font-size: 70px">Timothée <b>Jeannin</b></h1>
@@ -32,18 +28,16 @@
         <div class="col-md-12">
             <h1 class="tj-section-title">Experiences</h1>
 
-            <div class="row tj-spaced" ng-repeat="experience in experiences">
+            <div class="row tj-spaced" v-for="experience in experiences">
                 <div class="col-md-2 text-right hidden-xs hidden-sm tj-visible-print-block">{{experience.timeFrame}}
                 </div>
-                <div class="col-md-8" ng-mouseenter="experience.hovered = true"
-                     ng-mouseleave="experience.hovered = false">
-                    <span class="tj-title" ng-bind-html="experience.title"></span>
+                <div class="col-md-8">
+                    <span class="tj-title" v-html="experience.title"></span>
                     <span class="tj-info">{{experience.info}}</span><br/>
-                    <span ng-bind-html="experience.description"></span>
-                    <span class="tj-stack" ng-show="experience.hovered">
-                        <span ng-repeat="techno in experience.stack">
-                            <a ng-href="{{techno.link}}">{{techno.name}}</a>
-                            <span ng-if="!$last">, </span>
+                    <span v-html="experience.description"></span>
+                    <span class="tj-stack">
+                        <span v-for="(techno, index) in experience.stack">
+                            <a v-bind:href="techno.link">{{techno.name}}</a><span v-show="index !== (experience.stack.length-1)">, </span>
                         </span>
                     </span>
                 </div>
@@ -78,15 +72,14 @@
         <div class="col-md-12">
             <h1 class="tj-section-title">Personal Projects</h1>
 
-            <div class="row tj-spaced" ng-repeat="project in personalProjects">
+            <div class="row tj-spaced" v-for="project in personalProjects">
                 <div class="col-md-2 text-right hidden-xs hidden-sm tj-visible-print-block">{{project.timeFrame}}</div>
-                <div class="col-md-7" ng-mouseenter="project.hovered = true" ng-mouseleave="project.hovered = false">
-                    <span class="tj-title" ng-bind-html="project.title"></span><br/>
-                    <span ng-bind-html="project.description"></span>
-                    <span class="tj-stack" ng-show="project.hovered">
-                        <span ng-repeat="techno in project.stack">
-                        <a ng-href="{{techno.link}}">{{techno.name}}</a>
-                        <span ng-if="!$last">, </span>
+                <div class="col-md-7">
+                    <span class="tj-title" v-html="project.title"></span><br/>
+                    <span v-html="project.description"></span>
+                    <span class="tj-stack">
+                        <span v-for="(techno, index) in project.stack">
+                        <a v-bind:href="techno.link">{{techno.name}}</a><span v-show="index !== (project.stack.length-1)">, </span>
                     </span>
                     </span>
                 </div>
@@ -98,21 +91,22 @@
             <h1 class="tj-section-title">Programming Skills</h1>
 
             <div class="row">
-                <div class="col-sm-4" ng-repeat="skillSet in skillSets" style="margin-bottom: 20px">
+                <div class="col-sm-4" v-for="skillSet in skillSets" style="margin-bottom: 20px">
                     <div>
                         <div style="margin-left: 50%;">
                             <h5><b>{{skillSet.name}}</b></h5>
                         </div>
                     </div>
 
-                    <div ng-repeat="skill in skillSet.skills | orderBy:'name'">
+                    <div v-for="skill in skillSet.skills">
                         <div style="width: 50%; float: right">
                             <div class="progress">
                                 <div class="progress-bar" role="progressbar"
-                                ng-style="{ 'width' : skill.evaluation}"></div>
+                                     ng-style="{ 'width' : skill.evaluation}"></div>
                             </div>
                         </div>
-                        <div class="text-right" style="width: 50%; float: right; padding-right: 15px">{{skill.name}}</div>
+                        <div class="text-right" style="width: 50%; float: right; padding-right: 15px">{{skill.name}}
+                        </div>
                     </div>
                 </div>
             </div>
@@ -185,5 +179,7 @@
     </div>
 </div>
 <br/><br/><br/><br/><br/><br/>
+<script src="node_modules/vue/dist/vue.js"></script>
+<script src="index.js"></script>
 </body>
 </html>
