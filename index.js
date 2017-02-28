@@ -5,7 +5,7 @@ new Vue({
             {
                 'timeFrame': '2013 - Now',
                 'title': 'Software engineer / Project manager: <a href="http://www.letsignit.com/">Letsignit</a>.',
-                'info': '(1 year and 6 months - Marseille, France)',
+                'info': '(3 years and 6 months - Marseille, France)',
                 'description': 'Responsible for defining development methodologies used by the team. ( <a href="dev_guidelines.pdf">guidelines</a>, ... )<br/>' +
                 'Developed a chrome extension that automatically inserts a personalised email signature <br/> on GMail and Office365. ' +
                 'Shipped the extension to 15 000 users.<br/>' +
