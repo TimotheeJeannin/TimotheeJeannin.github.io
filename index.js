@@ -3,7 +3,7 @@ new Vue({
     data: {
         experiences: [
             {
-                'timeFrame': '2013 - Now',
+                'timeFrame': '2013 - 2017',
                 'title': 'Software engineer / Project manager: <a href="http://www.letsignit.com/">Letsignit</a>.',
                 'info': '(3 years and 6 months - Marseille, France)',
                 'description': 'Responsible for defining development methodologies used by the team. ( <a href="dev_guidelines.pdf">guidelines</a>, ... )<br/>' +
