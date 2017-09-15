@@ -84,6 +84,18 @@ new Vue({
         ],
         personalProjects: [
             {
+                'timeFrame': '2017 - Now',
+                'title': 'Screenshot API: <a href="https://apileap.com/">ApiLeap</a>.',
+                'description': 'API to convert URLs & HTML to images using Chrome as a rendering engine.<br/>',
+                'stack': [{'name': 'Python', 'link': 'https://www.python.org/'},
+                    {'name': 'Flask', 'link': 'http://flask.pocoo.org/'},
+                    {'name': 'Vue.js', 'link': 'https://vuejs.org/'},
+                    {'name': 'SQLAlchemy', 'link': 'https://www.sqlalchemy.org/'},
+                    {'name': 'Stripe', 'link': 'https://stripe.com/'},
+                    {'name': 'Gunicorn', 'link': 'http://gunicorn.org/'},
+                    {'name': 'Nginx', 'link': 'https://www.nginx.com/'}]
+            },
+            {
                 'timeFrame': '2015 - Now',
                 'title': 'Game Recording Service: <a href="https://dotamemories.com">DotaMemories</a>.',
                 'description': 'Automatically records games of subscribed players and publish them on YouTube.<br/>',
