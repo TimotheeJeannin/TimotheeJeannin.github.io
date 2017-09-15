@@ -173,7 +173,8 @@ new Vue({
                 'skills': [
                     {'name': 'FontAwesome', 'evaluation': '99%'},
                     {'name': 'Less', 'evaluation': '70%'},
-                    {'name': 'AngularJs', 'evaluation': '90%'},
+                    {'name': 'AngularJs', 'evaluation': '70%'},
+                    {'name': 'Vue.js', 'evaluation': '80%'},
                     {'name': 'React', 'evaluation': '10%'},
                     {'name': 'jQuery', 'evaluation': '70%'},
                     {'name': 'Bootstrap', 'evaluation': '99%'},
@@ -230,6 +231,7 @@ new Vue({
                     {'name': 'Jenkins', 'evaluation': '80%'},
                     {'name': 'Travis', 'evaluation': '60%'},
                     {'name': 'CodeShip', 'evaluation': '80%'},
+                    {'name': 'Bitbucket Pipeline', 'evaluation': '90%'},
                     {'name': 'TeamCity', 'evaluation': '20%'}
                 ]
             },
@@ -251,13 +253,13 @@ new Vue({
             {
                 'name': 'Deployment',
                 'skills': [
-                    {'name': 'Ansible', 'evaluation': '30%'},
+                    {'name': 'Ansible', 'evaluation': '20%'},
                     {'name': 'Docker', 'evaluation': '50%'},
-                    {'name': 'Fabric', 'evaluation': '70%'},
-                    {'name': 'Gunicorn', 'evaluation': '70%'},
-                    {'name': 'Nginx', 'evaluation': '40%'},
-                    {'name': 'Puppet', 'evaluation': '10%'},
-                    {'name': 'Tomcat', 'evaluation': '20%'}
+                    {'name': 'Fabric', 'evaluation': '80%'},
+                    {'name': 'Gunicorn', 'evaluation': '80%'},
+                    {'name': 'Nginx', 'evaluation': '70%'},
+                    {'name': 'Puppet', 'evaluation': '15%'},
+                    {'name': 'Tomcat', 'evaluation': '10%'}
                 ]
             },
             {
@@ -272,7 +274,7 @@ new Vue({
             {
                 'name': 'Google Cloud Platform',
                 'skills': [
-                    {'name': 'YouTube API', 'evaluation': '60%'},
+                    {'name': 'YouTube API', 'evaluation': '90%'},
                     {'name': 'Admin SDK', 'evaluation': '60%'},
                     {'name': 'App Engine', 'evaluation': '60%'},
                     {'name': 'Cloud SQL', 'evaluation': '70%'}
