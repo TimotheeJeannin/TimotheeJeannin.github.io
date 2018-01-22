@@ -173,14 +173,16 @@ new Vue({
                 'skills': [
                     {'name': 'FontAwesome', 'evaluation': '99%'},
                     {'name': 'Less', 'evaluation': '70%'},
+                    {'name': 'Sass', 'evaluation': '80%'},
                     {'name': 'AngularJs', 'evaluation': '70%'},
                     {'name': 'Vue.js', 'evaluation': '80%'},
                     {'name': 'React', 'evaluation': '10%'},
                     {'name': 'jQuery', 'evaluation': '70%'},
                     {'name': 'Bootstrap', 'evaluation': '99%'},
-                    {'name': 'Bower', 'evaluation': '90%'},
                     {'name': 'NPM', 'evaluation': '80%'},
+                    {'name': 'Webpack', 'evaluation': '20%'},
                     {'name': 'Grunt', 'evaluation': '70%'},
+                    {'name': 'Gulp', 'evaluation': '80%'},
                     {'name': 'Karma', 'evaluation': '80%'},
                     {'name': 'D3.js', 'evaluation': '60%'},
                     {'name': 'Jasmine', 'evaluation': '90%'}
