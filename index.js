@@ -6,10 +6,12 @@ new Vue({
                 'timeFrame': '2013 - 2017',
                 'title': 'Software engineer / Project manager: <a href="http://www.letsignit.com/">Letsignit</a>.',
                 'info': '(3 years and 6 months - Marseille, France)',
-                'description': 'Responsible for defining development methodologies used by the team. ( <a href="dev_guidelines.pdf">guidelines</a>, ... )<br/>' +
+                'description': 'Managed a team of 4 developers working on a key company product. <br/>' +
+                'Coordinated interactions between the UI/UX team, the QA team and developers. <br/>' +
+                'Was responsible for defining development methodologies and project processes. ( <a href="dev_guidelines.pdf">guidelines</a>, ... )<br/>' +
                 'Developed a chrome extension that automatically inserts a personalised email signature <br/> on GMail and Office365. ' +
                 'Shipped the extension to 15 000 users.<br/>' +
-                'Implemented an administrative console that allows system administrators <br/> to configure their SMTP server and synchronise LetSignIt with their LDAP directory.<br/>',
+                'Implemented an administrative console that allows system administrators <br/> to configure their SMTP server and synchronise with their LDAP directory.<br/>',
                 'stack': [
                     {'name': 'Python', 'link': 'https://www.python.org/'},
                     {'name': 'Flask', 'link': 'http://flask.pocoo.org/'},
@@ -210,7 +212,8 @@ new Vue({
                 'name': 'Mobile',
                 'skills': [
                     {'name': 'Android SDK', 'evaluation': '80%'},
-                    {'name': 'Robotium', 'evaluation': '70%'}
+                    {'name': 'Robotium', 'evaluation': '70%'},
+                    {'name': 'Progressive Web Apps', 'evaluation': '40%'}
                 ]
             },
             {
@@ -225,6 +228,15 @@ new Vue({
                 'skills': [
                     {'name': 'Git', 'evaluation': '100%'},
                     {'name': 'Subversion', 'evaluation': '90%'}
+                ]
+            },
+            {
+                'name': 'Machine Learning',
+                'skills': [
+                    {'name': 'Scikit Learn', 'evaluation': '60%'},
+                    {'name': 'Pandas', 'evaluation': '70%'},
+                    {'name': 'Jupyter', 'evaluation': '80%'},
+                    {'name': 'TensorFlow', 'evaluation': '10%'}
                 ]
             },
             {
