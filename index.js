@@ -6,12 +6,12 @@ new Vue({
                 'timeFrame': '2013 - 2017',
                 'title': 'Software engineer / Project manager: <a href="http://www.letsignit.com/">Letsignit</a>.',
                 'info': '(3 years and 6 months - Marseille, France)',
-                'description': 'Managed a team of 4 developers working on a key company product. <br/>' +
-                'Coordinated interactions between the UI/UX team, the QA team and developers. <br/>' +
-                'Was responsible for defining development methodologies and project processes. ( <a href="dev_guidelines.pdf">guidelines</a>, ... )<br/>' +
-                'Developed a chrome extension that automatically inserts a personalised email signature <br/> on GMail and Office365. ' +
-                'Shipped the extension to 15 000 users.<br/>' +
-                'Implemented an administrative console that allows system administrators <br/> to configure their SMTP server and synchronise with their LDAP directory.',
+                'description': 'Managed a team of 4 developers working on a key company product. <br class="d-none d-md-block"/>' +
+                'Coordinated interactions between the UI/UX team, the QA team and developers. <br class="d-none d-md-block"/>' +
+                'Was responsible for defining development methodologies and project processes. ( <a href="dev_guidelines.pdf">guidelines</a>, ... )<br class="d-none d-md-block"/>' +
+                'Developed a chrome extension that automatically inserts a personalised email signature <br class="d-none d-md-block"/> on GMail and Office365. ' +
+                'Shipped the extension to 15 000 users.<br class="d-none d-md-block"/>' +
+                'Implemented an administrative console that allows system administrators <br class="d-none d-md-block"/> to configure their SMTP server and synchronise with their LDAP directory.',
                 'stack': [
                     {'name': 'Python', 'link': 'https://www.python.org/'},
                     {'name': 'Flask', 'link': 'http://flask.pocoo.org/'},
@@ -31,7 +31,7 @@ new Vue({
                 'timeFrame': '2012 - 2013',
                 'title': 'Software engineer: <a href="http://www.synchronoss.com/">Synchronoss</a>.',
                 'info': '(1 year - Marseille, France)',
-                'description': 'Developed several components of the backup & restore Android application <br/>' +
+                'description': 'Developed several components of the backup & restore Android application <br class="d-none d-md-block"/>' +
                 'that comes pre-installed with Verizon\'s phones.',
                 'stack': [
                     {'name': 'Java', 'link': 'https://www.java.com/fr/'},
@@ -44,7 +44,7 @@ new Vue({
                 'timeFrame': '2012',
                 'title': 'Software engineer: <a href="http://www.soprasteria.com/">Sopra Steria</a>.',
                 'info': '(3 months - Aix en Provence, France)',
-                'description': 'Implemented Airbus\'s customer portal which allows a customer <br/>' +
+                'description': 'Implemented Airbus\'s customer portal which allows a customer <br class="d-none d-md-block"/>' +
                 'to order maintenance visits, repairs and upgrades for its helicopter fleet.',
                 'stack': [
                     {'name': 'Java', 'link': 'https://www.java.com/fr/'},
@@ -62,7 +62,7 @@ new Vue({
                 'timeFrame': '2011',
                 'title': 'Graduation internship : <a href="http://www.airbushelicopters.com/">Airbus Helicopters</a>.',
                 'info': '(6 months - Marignane, France)',
-                'description': 'Developed an electrical load analysis tool to validate helicopters\' proper electrical wiring. <br/>' +
+                'description': 'Developed an electrical load analysis tool to validate helicopters\' proper electrical wiring. <br class="d-none d-md-block"/>' +
                 'Integrated the product in the testing process of helicopters.',
                 'stack': [
                     {'name': 'JavaScript', 'link': 'https://developer.mozilla.org/fr/docs/Web/JavaScript'},
@@ -88,7 +88,7 @@ new Vue({
             {
                 'timeFrame': '2017 - Now',
                 'title': 'Screenshot API: <a href="https://apileap.com/">ApiLeap</a>.',
-                'description': 'API to convert URLs & HTML to images using Chrome as a rendering engine.<br/>',
+                'description': 'API to convert URLs & HTML to images using Chrome as a rendering engine.<br class="d-none d-md-block"/>',
                 'stack': [{'name': 'Python', 'link': 'https://www.python.org/'},
                     {'name': 'Flask', 'link': 'http://flask.pocoo.org/'},
                     {'name': 'Vue.js', 'link': 'https://vuejs.org/'},
@@ -100,7 +100,7 @@ new Vue({
             {
                 'timeFrame': '2015 - Now',
                 'title': 'Game Recording Service: <a href="https://dotamemories.com">DotaMemories</a>.',
-                'description': 'Automatically records games of subscribed players and publish them on YouTube.<br/>',
+                'description': 'Automatically records games of subscribed players and publish them on YouTube.<br class="d-none d-md-block"/>',
                 'stack': [{'name': 'Python', 'link': 'https://www.python.org/'},
                     {'name': 'Flask', 'link': 'http://flask.pocoo.org/'},
                     {'name': 'C# Mono', 'link': 'http://www.mono-project.com/'},
@@ -112,7 +112,7 @@ new Vue({
             {
                 'timeFrame': '2015 - 2015',
                 'title': 'Automated Youtube Channel: <a href="https://www.youtube.com/channel/UCsuAMQ97Gq0oy1pub04o4wA">DotaDroid</a>.',
-                'description': 'DotaDroid finds interesting Dota2 actions and upload them on YouTube.<br/>',
+                'description': 'DotaDroid finds interesting Dota2 actions and upload them on YouTube.<br class="d-none d-md-block"/>',
                 'stack': [{'name': 'Python', 'link': 'https://www.python.org/'},
                     {'name': 'Redis', 'link': 'http://redis.io/'},
                     {'name': 'Rq', 'link': 'http://python-rq.org/'},
@@ -127,7 +127,7 @@ new Vue({
                 'timeFrame': '2014 - Now',
                 'title': 'Desktop Application: <a href="http://www.streamtim.com/">StreamTim</a>.',
                 'description': 'Allows you to stream a movie in <a href="http://www.videolan.org/vlc/">Vlc</a> ' +
-                'from a torrent link / magnet link.<br/>',
+                'from a torrent link / magnet link.<br class="d-none d-md-block"/>',
                 'stack': [{'name': 'NW.js', 'link': 'https://github.com/nwjs/nw.js'},
                     {'name': 'Grunt', 'link': 'http://gruntjs.com/'},
                     {'name': 'Karma', 'link': 'http://karma-runner.github.io/0.12/index.html'},
@@ -140,7 +140,7 @@ new Vue({
             {
                 'timeFrame': '2012 - 2013',
                 'title': 'Android Application: <a href="http://circlealarm.com">CircleAlarm</a>.',
-                'description': 'An alarm clock for android that talks and snoozes when flipped over.<br/>' +
+                'description': 'An alarm clock for android that talks and snoozes when flipped over.<br class="d-none d-md-block"/>' +
                 'More than 80 000 downloads and an average rating of 4.6 out of 5.<ul>' +
                 '<li>Top 10 of the best free apps of all times on <a href="http://www.alltechtricks.org/top-10-best-android-apps-for-free/">alltechtricks.com</a></li>' +
                 '<li>First of the apps of the week on <a href="http://androidandme.com/2012/10/applications/top-10-most-popular-android-apps-from-last-week-circle-alarm-nba-2k13-right-click/">androidandme.com</a></li>' +

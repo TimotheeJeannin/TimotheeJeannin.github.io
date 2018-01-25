@@ -2,7 +2,11 @@
 <html xmlns:v-bind="http://www.w3.org/1999/xhtml">
 <head>
     <title>Timothée Jeannin</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
@@ -26,14 +30,16 @@
     </div>
     <div class="row">
         <div class="col-md-12">
-            <h1 class="tj-section-title">Experiences</h1>
+            <h2 class="display-4 mt-5 mb-2 font-weight-bold">Experiences</h2>
 
             <div class="row pt-3 tj-section" v-for="experience in experiences">
-                <div class="col-md-2 text-right hidden-xs hidden-sm tj-visible-print-block">{{ experience.timeFrame }}
+                <div class="col-md-2 text-right d-none d-md-block tj-visible-print-block">
+                    {{ experience.timeFrame }}
                 </div>
                 <div class="col-md-8">
                     <span class="font-weight-bold" v-html="experience.title"></span>
-                    <span class="font-italic">{{ experience.info }}</span><br/>
+                    <br class="d-block d-xl-none"/>
+                    <span class="font-weight-light">{{ experience.info }}</span><br/>
                     <span v-html="experience.description"></span><br/>
                     <span class="tj-stack">
                         <span v-for="(techno, index) in experience.stack">
@@ -47,14 +53,14 @@
     </div>
     <div class="row">
         <div class="col-md-12">
-            <h1 class="tj-section-title">Education</h1>
+            <h2 class="display-4 mt-5 mb-2 font-weight-bold">Education</h2>
 
             <div class="row py-3">
                 <div class="col-md-2 text-right hidden-xs hidden-sm tj-visible-print-block">2008 - 2011</div>
                 <div class="col-md-10">
                 <span class="font-weight-bold">Master-level Engineering degree from
                     <a href="https://www.centrale-marseille.fr/"> Ecole Centrale Marseille</a></span>
-                    <span class="font-italic">(3 years - Marseille, France)</span><br/>
+                    <span class="font-weight-light">(3 years - Marseille, France)</span><br/>
                     A French engineering school which awards the Master's Degree in Computer Science and Engineering.
                 </div>
             </div>
@@ -62,7 +68,7 @@
                 <div class="col-md-2 text-right hidden-xs hidden-sm tj-visible-print-block">2006 - 2008</div>
                 <div class="col-md-10">
                     <span class="font-weight-bold">Classe Préparatoire at Lycée Turgot</span>
-                    <span class="font-italic">(2 years - Paris, France)</span><br/>
+                    <span class="font-weight-light">(2 years - Paris, France)</span><br/>
                     Two years intensive undergraduate course, specialized in Maths and Physics,<br/>
                     to prepare for competitive exam to enter French engineering schools.
                 </div>
@@ -71,7 +77,7 @@
     </div>
     <div class="row">
         <div class="col-md-12">
-            <h1 class="tj-section-title">Personal Projects</h1>
+            <h2 class="display-4 mt-5 mb-2 font-weight-bold">Personal Projects</h2>
 
             <div class="row pt-3 tj-section" v-for="project in personalProjects">
                 <div class="col-md-2 text-right hidden-xs hidden-sm tj-visible-print-block">{{ project.timeFrame }}</div>
@@ -90,7 +96,7 @@
     </div>
     <div class="row">
         <div class="col-md-12">
-            <h1 class="tj-section-title">Programming Skills</h1>
+            <h2 class="display-4 mt-5 mb-2 font-weight-bold">Programming Skills</h2>
 
             <div class="row">
                 <div class="col-sm-4" v-for="skillSet in skillSets" style="margin-bottom: 20px">
@@ -115,7 +121,7 @@
     </div>
     <div class="row">
         <div class="col-md-12">
-            <h1 class="tj-section-title">Graphic Design</h1>
+            <h2 class="display-4 mt-5 mb-2 font-weight-bold">Graphic Design</h2>
 
             <div class="row pt-3">
                 <div class="col-md-10 offset-md-2">
@@ -133,7 +139,7 @@
     </div>
     <div class="row">
         <div class="col-md-12">
-            <h1 class="tj-section-title">Languages</h1>
+            <h2 class="display-4 mt-5 mb-2 font-weight-bold">Languages</h2>
 
             <div class="row pt-3">
                 <div class="col-md-10 offset-md-2">
@@ -154,7 +160,7 @@
     </div>
     <div class="row">
         <div class="col-md-12">
-            <h1 class="tj-section-title">Other Interests</h1>
+            <h2 class="display-4 mt-5 mb-2 font-weight-bold">Other Interests</h2>
 
             <div class="row pt-3">
                 <div class="col-md-10 offset-md-2">
