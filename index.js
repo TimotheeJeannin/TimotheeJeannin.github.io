@@ -213,7 +213,7 @@ new Vue({
                 'skills': [
                     {'name': 'Android SDK', 'evaluation': '80%'},
                     {'name': 'Robotium', 'evaluation': '70%'},
-                    {'name': 'Progressive Web Apps', 'evaluation': '40%'}
+                    {'name': 'PWA', 'evaluation': '40%'}
                 ]
             },
             {
@@ -280,8 +280,12 @@ new Vue({
                 'name': 'Amazon Web Services',
                 'skills': [
                     {'name': 'S3', 'evaluation': '80%'},
+                    {'name': 'IAM', 'evaluation': '30%'},
+                    {'name': 'CloudFront', 'evaluation': '40%'},
                     {'name': 'EC2', 'evaluation': '60%'},
-                    {'name': 'Route 53', 'evaluation': '40%'},
+                    {'name': 'Lambda', 'evaluation': '20%'},
+                    {'name': 'RDS', 'evaluation': '70%'},
+                    {'name': 'Route 53', 'evaluation': '60%'},
                     {'name': 'Elastic Beanstalk', 'evaluation': '50%'}
                 ]
             },
