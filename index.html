@@ -32,7 +32,7 @@
             <h2 class="display-4 mt-5 mb-2 font-weight-bold">Experiences</h2>
 
             <div class="row pt-3 tj-section" v-for="experience in experiences">
-                <div class="col-md-2 text-right d-none d-md-block tj-visible-print-block">
+                <div class="col-md-2 text-right font-weight-light d-none d-md-block tj-visible-print-block">
                     {{ experience.timeFrame }}
                 </div>
                 <div class="col-md-10">
@@ -55,7 +55,9 @@
             <h2 class="display-4 mt-5 mb-2 font-weight-bold">Education</h2>
 
             <div class="row py-3">
-                <div class="col-md-2 text-right hidden-xs hidden-sm tj-visible-print-block">2008 - 2011</div>
+                <div class="col-md-2 text-right font-weight-light hidden-xs hidden-sm tj-visible-print-block">
+                    2008 - 2011
+                </div>
                 <div class="col-md-10">
                 <span class="font-weight-bold">Master-level Engineering degree from
                     <a href="https://www.centrale-marseille.fr/"> Ecole Centrale Marseille</a></span>
@@ -64,7 +66,9 @@
                 </div>
             </div>
             <div class="row py-3">
-                <div class="col-md-2 text-right hidden-xs hidden-sm tj-visible-print-block">2006 - 2008</div>
+                <div class="col-md-2 text-right font-weight-light hidden-xs hidden-sm tj-visible-print-block">
+                    2006 - 2008
+                </div>
                 <div class="col-md-10">
                     <span class="font-weight-bold">Classe Préparatoire at Lycée Turgot</span>
                     <span class="font-weight-light">(2 years - Paris, France)</span><br/>
@@ -79,7 +83,9 @@
             <h2 class="display-4 mt-5 mb-2 font-weight-bold">Personal Projects</h2>
 
             <div class="row pt-3 tj-section" v-for="project in personalProjects">
-                <div class="col-md-2 text-right hidden-xs hidden-sm tj-visible-print-block">{{ project.timeFrame }}</div>
+                <div class="col-md-2 text-right font-weight-light hidden-xs hidden-sm tj-visible-print-block">
+                    {{ project.timeFrame }}
+                </div>
                 <div class="col-md-10">
                     <span class="font-weight-bold" v-html="project.title"></span><br/>
                     <span v-html="project.description"></span>
@@ -109,7 +115,8 @@
                                 <div class="progress-bar" v-bind:style="{ 'width' : skill.evaluation}"></div>
                             </div>
                         </div>
-                        <div class="text-right" style="width: 50%; float: right; padding-right: 15px">{{ skill.name }}</div>
+                        <div class="text-right"
+                             style="width: 50%; float: right; padding-right: 15px">{{ skill.name }}</div>
                     </div>
                 </div>
             </div>
