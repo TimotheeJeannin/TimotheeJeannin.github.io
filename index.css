@@ -43,6 +43,10 @@ body {
     }
 }
 
+div.card-columns .card {
+    background-color: transparent;
+}
+
 div.progress {
     background-color: rgba(255, 255, 255, .3);
     border-radius: 0;
