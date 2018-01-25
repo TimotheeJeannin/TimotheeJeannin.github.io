@@ -1,0 +1,21 @@
+{
+  "name": "timotheejeannin.github.io",
+  "version": "1.0.0",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "moment": "^2.17.1",
+    "vue": "^2.2.1"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.5.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TimotheeJeannin/TimotheeJeannin.github.io.git"
+  },
+  "author": "Timothee Jeannin",
+  "homepage": "http://timotheejeannin.com/"
+}

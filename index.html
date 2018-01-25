@@ -3,25 +3,24 @@
 <head>
     <title>Timothée Jeannin</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" media="screen">
-    <link rel="stylesheet" href="printable-bootstrap.css" media="print">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
 <div class="container" id="app">
-    <div class="row">
-        <div class="col-md-7">
-            <h1 style="font-size: 70px">Timothée <b>Jeannin</b></h1>
+    <div class="row mt-5">
+        <div class="col-xl-7">
+            <h1 class="display-3">Timothée <b>Jeannin</b></h1>
             2 Rue du Faubourg Boutonnet 34090 Montpellier, France<br/>
             <a href="mailto:timojeajea@gmail.com">timojeajea@gmail.com</a><br/>
             <a href="tel:+33 670 542 052">+33 670 542 052</a>
             <br/><br/><br/>
             More about me on <a href="https://github.com/TimotheeJeannin">GitHub</a> and
-            <a href="http://stackoverflow.com/users/781588/timoth%C3%A9e-jeannin">StackOverflow</a>.
+            <a href="https://stackoverflow.com/users/781588/timoth%C3%A9e-jeannin">StackOverflow</a>.
         </div>
-        <div class="col-md-3 col-md-offset-1 hidden-xs hidden-sm tj-visible-print-block">
-            <img height="240" style="padding: 15px; margin-top: 30px; border: solid lightgray 1px"
+        <div class="col-xl-3 offset-xl-1 d-none d-xl-block tj-visible-print-block">
+            <img class="img-thumbnail rounded-0 p-3"
                  src="picture.png">
         </div>
     </div>
@@ -29,16 +28,16 @@
         <div class="col-md-12">
             <h1 class="tj-section-title">Experiences</h1>
 
-            <div class="row tj-spaced" v-for="experience in experiences">
-                <div class="col-md-2 text-right hidden-xs hidden-sm tj-visible-print-block">{{experience.timeFrame}}
+            <div class="row pt-3 tj-section" v-for="experience in experiences">
+                <div class="col-md-2 text-right hidden-xs hidden-sm tj-visible-print-block">{{ experience.timeFrame }}
                 </div>
                 <div class="col-md-8">
-                    <span class="tj-title" v-html="experience.title"></span>
-                    <span class="tj-info">{{experience.info}}</span><br/>
-                    <span v-html="experience.description"></span>
+                    <span class="font-weight-bold" v-html="experience.title"></span>
+                    <span class="font-italic">{{ experience.info }}</span><br/>
+                    <span v-html="experience.description"></span><br/>
                     <span class="tj-stack">
                         <span v-for="(techno, index) in experience.stack">
-                            <a v-bind:href="techno.link">{{techno.name}}</a><span
+                            <a v-bind:href="techno.link">{{ techno.name }}</a><span
                                 v-show="index !== (experience.stack.length-1)">, </span>
                         </span>
                     </span>
@@ -50,20 +49,20 @@
         <div class="col-md-12">
             <h1 class="tj-section-title">Education</h1>
 
-            <div class="row tj-spaced">
+            <div class="row py-3">
                 <div class="col-md-2 text-right hidden-xs hidden-sm tj-visible-print-block">2008 - 2011</div>
                 <div class="col-md-10">
-                <span class="tj-title">Master-level Engineering degree from
+                <span class="font-weight-bold">Master-level Engineering degree from
                     <a href="https://www.centrale-marseille.fr/"> Ecole Centrale Marseille</a></span>
-                    <span class="tj-info">(3 years - Marseille, France)</span><br/>
+                    <span class="font-italic">(3 years - Marseille, France)</span><br/>
                     A French engineering school which awards the Master's Degree in Computer Science and Engineering.
                 </div>
             </div>
-            <div class="row tj-spaced">
+            <div class="row py-3">
                 <div class="col-md-2 text-right hidden-xs hidden-sm tj-visible-print-block">2006 - 2008</div>
                 <div class="col-md-10">
-                    <span class="tj-title">Classe Préparatoire at Lycée Turgot</span>
-                    <span class="tj-info">(2 years - Paris, France)</span><br/>
+                    <span class="font-weight-bold">Classe Préparatoire at Lycée Turgot</span>
+                    <span class="font-italic">(2 years - Paris, France)</span><br/>
                     Two years intensive undergraduate course, specialized in Maths and Physics,<br/>
                     to prepare for competitive exam to enter French engineering schools.
                 </div>
@@ -74,14 +73,14 @@
         <div class="col-md-12">
             <h1 class="tj-section-title">Personal Projects</h1>
 
-            <div class="row tj-spaced" v-for="project in personalProjects">
-                <div class="col-md-2 text-right hidden-xs hidden-sm tj-visible-print-block">{{project.timeFrame}}</div>
+            <div class="row pt-3 tj-section" v-for="project in personalProjects">
+                <div class="col-md-2 text-right hidden-xs hidden-sm tj-visible-print-block">{{ project.timeFrame }}</div>
                 <div class="col-md-7">
-                    <span class="tj-title" v-html="project.title"></span><br/>
+                    <span class="font-weight-bold" v-html="project.title"></span><br/>
                     <span v-html="project.description"></span>
                     <span class="tj-stack">
                         <span v-for="(techno, index) in project.stack">
-                            <a v-bind:href="techno.link">{{techno.name}}</a><span
+                            <a v-bind:href="techno.link">{{ techno.name }}</a><span
                                 v-show="index !== (project.stack.length-1)">, </span>
                         </span>
                     </span>
@@ -97,7 +96,7 @@
                 <div class="col-sm-4" v-for="skillSet in skillSets" style="margin-bottom: 20px">
                     <div>
                         <div style="margin-left: 50%;">
-                            <h5><b>{{skillSet.name}}</b></h5>
+                            <h5><b>{{ skillSet.name }}</b></h5>
                         </div>
                     </div>
 
@@ -107,7 +106,7 @@
                                 <div class="progress-bar" v-bind:style="{ 'width' : skill.evaluation}"></div>
                             </div>
                         </div>
-                        <div class="text-right" style="width: 50%; float: right; padding-right: 15px">{{skill.name}}
+                        <div class="text-right" style="width: 50%; float: right; padding-right: 15px">{{ skill.name }}
                         </div>
                     </div>
                 </div>
@@ -118,15 +117,15 @@
         <div class="col-md-12">
             <h1 class="tj-section-title">Graphic Design</h1>
 
-            <div class="row tj-spaced">
-                <div class="col-md-10 col-md-offset-2">
-                    <span class="tj-title">Adobe Photoshop:</span>
+            <div class="row pt-3">
+                <div class="col-md-10 offset-md-2">
+                    <span class="font-weight-bold">Adobe Photoshop:</span>
                     Realization of many logos, posters and booklets.
                 </div>
             </div>
-            <div class="row tj-spaced">
-                <div class="col-md-10 col-md-offset-2">
-                    <span class="tj-title">Adobe InDesign:</span>
+            <div class="row pt-3">
+                <div class="col-md-10 offset-md-2">
+                    <span class="font-weight-bold">Adobe InDesign:</span>
                     84 page booklet for the Centrale Marseille Enterprises forum.
                 </div>
             </div>
@@ -136,19 +135,19 @@
         <div class="col-md-12">
             <h1 class="tj-section-title">Languages</h1>
 
-            <div class="row tj-spaced">
-                <div class="col-md-10 col-md-offset-2">
-                    <span class="tj-title">French:</span> First language.
+            <div class="row pt-3">
+                <div class="col-md-10 offset-md-2">
+                    <span class="font-weight-bold">French:</span> First language.
                 </div>
             </div>
-            <div class="row tj-spaced">
-                <div class="col-md-10 col-md-offset-2">
-                    <span class="tj-title">English:</span> Fluent both written and spoken.
+            <div class="row pt-3">
+                <div class="col-md-10 offset-md-2">
+                    <span class="font-weight-bold">English:</span> Fluent both written and spoken.
                 </div>
             </div>
-            <div class="row tj-spaced">
-                <div class="col-md-10 col-md-offset-2">
-                    <span class="tj-title">Japanese:</span> Beginner.
+            <div class="row pt-3">
+                <div class="col-md-10 offset-md-2">
+                    <span class="font-weight-bold">Japanese:</span> Beginner.
                 </div>
             </div>
         </div>
@@ -157,24 +156,25 @@
         <div class="col-md-12">
             <h1 class="tj-section-title">Other Interests</h1>
 
-            <div class="row tj-spaced">
-                <div class="col-md-10 col-md-offset-2">
-                    <span class="tj-title">Sport:</span> Rock Climbing, HighLining, Windsurfing.
+            <div class="row pt-3">
+                <div class="col-md-10 offset-md-2">
+                    <span class="font-weight-bold">Sport:</span> Rock Climbing, HighLining, Windsurfing.
                 </div>
             </div>
-            <div class="row tj-spaced">
-                <div class="col-md-10 col-md-offset-2">
-                    <span class="tj-title">Music:</span> Drums.
+            <div class="row pt-3">
+                <div class="col-md-10 offset-md-2">
+                    <span class="font-weight-bold">Music:</span> Drums.
                 </div>
             </div>
-            <div class="row tj-spaced">
-                <div class="col-md-10 col-md-offset-2">
-                    <span class="tj-title">Reading:</span> Comics, Science and technology.
+            <div class="row pt-3">
+                <div class="col-md-10 offset-md-2">
+                    <span class="font-weight-bold">Reading:</span> Comics, Science and technology.
                 </div>
             </div>
-            <div class="row tj-spaced">
-                <div class="col-md-10 col-md-offset-2">
-                    <span class="tj-title">Traveling:</span> Thailand, United States, Spain, Turkey, Kenya, Israel.
+            <div class="row pt-3">
+                <div class="col-md-10 offset-md-2">
+                    <span class="font-weight-bold">Traveling:</span> Thailand, United States, Spain, Turkey, Kenya,
+                    Israel.
                 </div>
             </div>
         </div>

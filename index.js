@@ -11,7 +11,7 @@ new Vue({
                 'Was responsible for defining development methodologies and project processes. ( <a href="dev_guidelines.pdf">guidelines</a>, ... )<br/>' +
                 'Developed a chrome extension that automatically inserts a personalised email signature <br/> on GMail and Office365. ' +
                 'Shipped the extension to 15 000 users.<br/>' +
-                'Implemented an administrative console that allows system administrators <br/> to configure their SMTP server and synchronise with their LDAP directory.<br/>',
+                'Implemented an administrative console that allows system administrators <br/> to configure their SMTP server and synchronise with their LDAP directory.',
                 'stack': [
                     {'name': 'Python', 'link': 'https://www.python.org/'},
                     {'name': 'Flask', 'link': 'http://flask.pocoo.org/'},
@@ -32,7 +32,7 @@ new Vue({
                 'title': 'Software engineer: <a href="http://www.synchronoss.com/">Synchronoss</a>.',
                 'info': '(1 year - Marseille, France)',
                 'description': 'Developed several components of the backup & restore Android application <br/>' +
-                'that comes pre-installed with Verizon\'s phones.<br/>',
+                'that comes pre-installed with Verizon\'s phones.',
                 'stack': [
                     {'name': 'Java', 'link': 'https://www.java.com/fr/'},
                     {'name': 'Android SDK', 'link': 'http://developer.android.com/sdk/index.html'},
@@ -45,7 +45,7 @@ new Vue({
                 'title': 'Software engineer: <a href="http://www.soprasteria.com/">Sopra Steria</a>.',
                 'info': '(3 months - Aix en Provence, France)',
                 'description': 'Implemented Airbus\'s customer portal which allows a customer <br/>' +
-                'to order maintenance visits, repairs and upgrades for its helicopter fleet.<br/>',
+                'to order maintenance visits, repairs and upgrades for its helicopter fleet.',
                 'stack': [
                     {'name': 'Java', 'link': 'https://www.java.com/fr/'},
                     {'name': 'JUnit', 'link': 'http://junit.org/'},
@@ -63,7 +63,7 @@ new Vue({
                 'title': 'Graduation internship : <a href="http://www.airbushelicopters.com/">Airbus Helicopters</a>.',
                 'info': '(6 months - Marignane, France)',
                 'description': 'Developed an electrical load analysis tool to validate helicopters\' proper electrical wiring. <br/>' +
-                'Integrated the product in the testing process of helicopters.<br/>',
+                'Integrated the product in the testing process of helicopters.',
                 'stack': [
                     {'name': 'JavaScript', 'link': 'https://developer.mozilla.org/fr/docs/Web/JavaScript'},
                     {'name': 'jQuery', 'link': 'http://jquery.com/'},
@@ -75,7 +75,7 @@ new Vue({
                 'timeFrame': '2010',
                 'title': 'Internship: <a href="http://www.campusgroups.com/">CampusGroups</a>.',
                 'info': '(2 months - New York, United States)',
-                'description': 'Developed a tool that collects usage statistics of CampusGroups\'s flagship product.<br/>',
+                'description': 'Developed a tool that collects usage statistics of CampusGroups\'s flagship product.',
                 'stack': [
                     {'name': 'JavaScript', 'link': 'https://developer.mozilla.org/fr/docs/Web/JavaScript'},
                     {'name': 'jQuery', 'link': 'http://jquery.com/'},
