@@ -141,7 +141,7 @@ new Vue({
                 'timeFrame': '2012 - 2013',
                 'title': 'Android Application: <a href="http://circlealarm.com">CircleAlarm</a>.',
                 'description': 'An alarm clock for android that talks and snoozes when flipped over.<br class="d-none d-md-block"/>' +
-                'More than 80 000 downloads and an average rating of 4.6 out of 5.<ul>' +
+                'More than 80 000 downloads and an average rating of 4.6 out of 5.<ul class="mb-0">' +
                 '<li>Top 10 of the best free apps of all times on <a href="http://www.alltechtricks.org/top-10-best-android-apps-for-free/">alltechtricks.com</a></li>' +
                 '<li>First of the apps of the week on <a href="http://androidandme.com/2012/10/applications/top-10-most-popular-android-apps-from-last-week-circle-alarm-nba-2k13-right-click/">androidandme.com</a></li>' +
                 '<li>Selected as android application of the week by <a href="http://www.presse-citron.net/les-applis-a-telecharger-cette-semaine-polagram-circle-alarm-doo-net-appswitch/">presse-citron.net</a></li>' +
@@ -161,7 +161,7 @@ new Vue({
                 'title': 'Android Open Source Library: <a href="http://github.com/TimotheeJeannin/ProviGen">ProviGen</a>.',
                 'description': 'A database management tool to easily make a <a href="https://developer.android.com/reference/android/content/ContentProvider.html">ContentProvider</a> ' +
                 'from an annotated <a href="http://developer.android.com/guide/topics/providers/content-provider-basics.html#ContractClasses">ContractClass</a>.' +
-                '<ul><li>Selected and published as library of the week by <a href="http://androidweekly.net/issues/issue-57">androidweekly.net</a></li></ul>',
+                '<ul class="mb-0"><li>Selected as library of the week by <a href="http://androidweekly.net/issues/issue-57">androidweekly.net</a></li></ul>',
                 'stack': [{'name': 'Java', 'link': 'https://www.java.com/fr/'},
                     {'name': 'Android SDK', 'link': 'http://developer.android.com/sdk/index.html'},
                     {'name': 'JUnit', 'link': 'http://junit.org/'},

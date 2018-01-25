@@ -35,7 +35,7 @@
                 <div class="col-md-2 text-right d-none d-md-block tj-visible-print-block">
                     {{ experience.timeFrame }}
                 </div>
-                <div class="col-md-8">
+                <div class="col-md-10">
                     <span class="font-weight-bold" v-html="experience.title"></span>
                     <br class="d-block d-xl-none"/>
                     <span class="font-weight-light">{{ experience.info }}</span><br/>
@@ -80,7 +80,7 @@
 
             <div class="row pt-3 tj-section" v-for="project in personalProjects">
                 <div class="col-md-2 text-right hidden-xs hidden-sm tj-visible-print-block">{{ project.timeFrame }}</div>
-                <div class="col-md-7">
+                <div class="col-md-10">
                     <span class="font-weight-bold" v-html="project.title"></span><br/>
                     <span v-html="project.description"></span>
                     <span class="tj-stack">
