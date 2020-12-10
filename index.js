@@ -93,6 +93,7 @@ new Vue({
                     {'name': 'Flask', 'link': 'http://flask.pocoo.org/'},
                     {'name': 'Vue.js', 'link': 'https://vuejs.org/'},
                     {'name': 'SQLAlchemy', 'link': 'https://www.sqlalchemy.org/'},
+                    {'name': 'PostgreSQL', 'link': 'https://www.postgresql.org/'},
                     {'name': 'Stripe', 'link': 'https://stripe.com/'},
                     {'name': 'Gunicorn', 'link': 'http://gunicorn.org/'},
                     {'name': 'Nginx', 'link': 'https://www.nginx.com/'}]
