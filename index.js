@@ -99,7 +99,7 @@ new Vue({
                     {'name': 'Nginx', 'link': 'https://www.nginx.com/'}]
             },
             {
-                'timeFrame': '2015 - Now',
+                'timeFrame': '2015 - 2018',
                 'title': 'Game Recording Service: <a href="https://dotamemories.com">DotaMemories</a>.',
                 'description': 'Automatically records games of subscribed players and publish them on YouTube.<br class="d-none d-lg-block"/>',
                 'stack': [{'name': 'Python', 'link': 'https://www.python.org/'},
@@ -125,7 +125,7 @@ new Vue({
                     {'name': 'Google Protobuf', 'link': 'https://github.com/google/protobuf'}]
             },
             {
-                'timeFrame': '2014 - Now',
+                'timeFrame': '2014 - 2015',
                 'title': 'Desktop Application: <a href="http://www.streamtim.com/">StreamTim</a>.',
                 'description': 'Allows you to stream a movie in <a href="http://www.videolan.org/vlc/">Vlc</a> ' +
                 'from a torrent link / magnet link.<br class="d-none d-lg-block"/>',
@@ -158,7 +158,7 @@ new Vue({
                     {'name': 'Google Analytics', 'link': 'http://www.google.fr/intl/fr/analytics/'}]
             },
             {
-                'timeFrame': '2012 - Now',
+                'timeFrame': '2012 - 2016',
                 'title': 'Android Open Source Library: <a href="http://github.com/TimotheeJeannin/ProviGen">ProviGen</a>.',
                 'description': 'A database management tool to easily make a <a href="https://developer.android.com/reference/android/content/ContentProvider.html">ContentProvider</a> ' +
                 'from an annotated <a href="http://developer.android.com/guide/topics/providers/content-provider-basics.html#ContractClasses">ContractClass</a>.' +
